@@ -35,7 +35,17 @@ body {
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+/* 内容不足一屏时页脚贴底 */
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+footer.site { margin-top: auto; }
 
 header.site {
   display: flex;
@@ -45,11 +55,17 @@ header.site {
 }
 header.site .brand { font-weight: 600; color: var(--text); }
 .lang-select {
+  -webkit-appearance: none;
+  appearance: none;
   border: 1px solid var(--line);
-  background: var(--card);
+  background-color: var(--card);
+  /* 自绘箭头，和右边框留出距离 */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%237a6f66' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
   color: var(--text);
   border-radius: 999px;
-  padding: 5px 12px;
+  padding: 5px 36px 5px 14px;
   font: inherit;
   font-size: 14px;
   cursor: pointer;
