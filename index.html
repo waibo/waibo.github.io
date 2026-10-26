@@ -1,12 +1,23 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-ui="zh-Hans">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NiceRhythm</title>
-  <meta name="title-zh" content="NiceRhythm">
+  <meta name="title-zh-Hans" content="NiceRhythm">
+  <meta name="title-zh-Hant" content="NiceRhythm">
   <meta name="title-en" content="NiceRhythm">
+  <meta name="title-ja" content="NiceRhythm">
+  <meta name="title-ko" content="NiceRhythm">
+  <meta name="title-fr" content="NiceRhythm">
+  <meta name="title-es" content="NiceRhythm">
+  <meta name="title-de" content="NiceRhythm">
+  <meta name="title-pt-BR" content="NiceRhythm">
+  <meta name="title-it" content="NiceRhythm">
+  <meta name="title-ru" content="NiceRhythm">
+  <meta name="description" content="Add a white border to your photos and print the aperture, shutter speed and ISO underneath.">
   <link rel="icon" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/app-icon.png">
   <link rel="stylesheet" href="/assets/style.css">
   <script src="/assets/lang.js"></script>
 </head>
@@ -14,26 +25,162 @@
   <div class="wrap">
     <header class="site">
       <a class="brand" href="/">Home</a>
-      <div class="lang-switch"><button data-set="zh">中文</button><button data-set="en">EN</button></div>
+      <select class="lang-select" aria-label="Language"><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="fr">Français</option><option value="es">Español</option><option value="de">Deutsch</option><option value="pt-BR">Português (Brasil)</option><option value="it">Italiano</option><option value="ru">Русский</option></select>
     </header>
-
-    <section class="hero">
-      <p class="tagline" data-lang="zh">为摄影爱好者做的小工具</p>
-      <p class="tagline" data-lang="en">Small, focused apps for people who love photography</p>
-    </section>
-
-    <section class="apps">
-      <a class="app-row" href="/PhotoBorder/">
-        <img src="/assets/app-icon.png" alt="">
-        <div>
-          <h3 data-lang="zh">白边相框</h3>
-          <h3 data-lang="en">PhotoBorder</h3>
-          <p data-lang="zh">给照片加白边，印上拍摄参数</p>
-          <p data-lang="en">White borders with your shot info</p>
-        </div>
-      </a>
-    </section>
-
+    <div data-lang="zh-Hans">
+      <section class="hero">
+        <p class="tagline">为摄影爱好者做的小工具</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>白边相框</h3>
+            <p>给照片加白边，印上拍摄参数</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div data-lang="zh-Hant">
+      <section class="hero">
+        <p class="tagline">為攝影愛好者打造的小工具</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>白邊相框</h3>
+            <p>為照片加白邊，印上拍攝參數</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div data-lang="en">
+      <section class="hero">
+        <p class="tagline">Small, focused apps for people who love photography</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>PhotoBorder</h3>
+            <p>White borders with your shot info</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div data-lang="ja">
+      <section class="hero">
+        <p class="tagline">写真好きのための、小さなアプリ</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>フォトボーダー</h3>
+            <p>撮影情報入りの白フチ写真に</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div data-lang="ko">
+      <section class="hero">
+        <p class="tagline">사진을 사랑하는 사람들을 위한 작은 앱</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>포토보더</h3>
+            <p>촬영 정보를 담은 흰 테두리 사진</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div data-lang="fr">
+      <section class="hero">
+        <p class="tagline">De petites apps pour les passionnés de photo</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>PhotoBorder</h3>
+            <p>Bordure blanche et infos photo</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div data-lang="es">
+      <section class="hero">
+        <p class="tagline">Pequeñas apps para quienes aman la fotografía</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>PhotoBorder</h3>
+            <p>Bordes blancos con datos EXIF</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div data-lang="de">
+      <section class="hero">
+        <p class="tagline">Kleine, fokussierte Apps für alle, die Fotografie lieben</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>PhotoBorder</h3>
+            <p>Weißer Rand mit Aufnahmedaten</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div data-lang="pt-BR">
+      <section class="hero">
+        <p class="tagline">Apps pequenos e focados para quem ama fotografia</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>PhotoBorder</h3>
+            <p>Borda branca com dados da foto</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div data-lang="it">
+      <section class="hero">
+        <p class="tagline">Piccole app per chi ama la fotografia</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>PhotoBorder</h3>
+            <p>Bordo bianco e dati di scatto</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div data-lang="ru">
+      <section class="hero">
+        <p class="tagline">Небольшие приложения для тех, кто любит фотографию</p>
+      </section>
+      <section class="apps">
+        <a class="app-row" href="/PhotoBorder/">
+          <img src="/assets/app-icon.png" alt="">
+          <div>
+            <h3>PhotoBorder</h3>
+            <p>Белая рамка и данные съёмки</p>
+          </div>
+        </a>
+      </section>
+    </div>
     <footer class="site">© 2026 NiceRhythm</footer>
   </div>
 </body>

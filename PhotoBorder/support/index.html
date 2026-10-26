@@ -1,88 +1,505 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-ui="zh-Hans">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>帮助与支持 Help &amp; Support - 白边相框 PhotoBorder</title>
-  <meta name="title-zh" content="帮助与支持 - 白边相框">
+  <title>帮助与支持 - 白边相框</title>
+  <meta name="title-zh-Hans" content="帮助与支持 - 白边相框">
+  <meta name="title-zh-Hant" content="說明與支援 - 白邊相框">
   <meta name="title-en" content="Help &amp; Support - PhotoBorder">
+  <meta name="title-ja" content="ヘルプとサポート - フォトボーダー">
+  <meta name="title-ko" content="도움말 및 지원 - 포토보더">
+  <meta name="title-fr" content="Aide et assistance - PhotoBorder">
+  <meta name="title-es" content="Ayuda y soporte - PhotoBorder">
+  <meta name="title-de" content="Hilfe &amp; Support - PhotoBorder">
+  <meta name="title-pt-BR" content="Ajuda e suporte - PhotoBorder">
+  <meta name="title-it" content="Aiuto e supporto - PhotoBorder">
+  <meta name="title-ru" content="Помощь и поддержка - PhotoBorder">
+  <meta name="description" content="Add a white border to your photos and print the aperture, shutter speed and ISO underneath.">
   <link rel="icon" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/app-icon.png">
   <link rel="stylesheet" href="/assets/style.css">
   <script src="/assets/lang.js"></script>
 </head>
 <body>
   <div class="wrap">
     <header class="site">
-      <a class="brand" href="/PhotoBorder/"><span data-lang="zh">白边相框</span><span data-lang="en">PhotoBorder</span></a>
-      <div class="lang-switch"><button data-set="zh">中文</button><button data-set="en">EN</button></div>
+      <a class="brand" href="/PhotoBorder/"><span data-lang="zh-Hans">白边相框</span><span data-lang="zh-Hant">白邊相框</span><span data-lang="en">PhotoBorder</span><span data-lang="ja">フォトボーダー</span><span data-lang="ko">포토보더</span><span data-lang="fr">PhotoBorder</span><span data-lang="es">PhotoBorder</span><span data-lang="de">PhotoBorder</span><span data-lang="pt-BR">PhotoBorder</span><span data-lang="it">PhotoBorder</span><span data-lang="ru">PhotoBorder</span></a>
+      <select class="lang-select" aria-label="Language"><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="fr">Français</option><option value="es">Español</option><option value="de">Deutsch</option><option value="pt-BR">Português (Brasil)</option><option value="it">Italiano</option><option value="ru">Русский</option></select>
     </header>
-
-    <article class="card" data-lang="zh">
+    <article class="card" data-lang="zh-Hans">
       <h1>帮助与支持</h1>
-
       <h3>1. 为什么有的照片不显示拍摄参数？</h3>
       <p>拍摄参数来自照片里的 EXIF 信息。截图、从微信等聊天软件保存的图片（未选“原图”）、部分修图 App 导出的图片通常不含 EXIF，本 App 会隐藏参数栏并给出提示。请尽量选择相机或手机直接拍摄的原片。</p>
 
-      <h3>2. 保存时提示没有相册权限怎么办？</h3>
+      <h3>2. 怎么切换成拍立得风格？</h3>
+      <p>在“边框”设置最上方的“样式”里选“拍立得”。之后可以调相纸颜色、颗粒强度和颗粒粗细，在“文字”里换字体。选深色相纸时，文字会自动变成白色。</p>
+
+      <h3>3. 怎么带着边框拍照？</h3>
+      <p>点首页或右上角的相机按钮。取景框里就是加好边框的效果，点底部的倍数按键可以切换镜头和变焦。拍完后照片会直接进入编辑页面，可以继续调整再保存。</p>
+
+      <h3>4. 打不开相机怎么办？</h3>
+      <p>打开“设置 › 隐私与安全性 › 相机”，打开“白边相框”的开关。</p>
+
+      <h3>5. 模板和批量导出怎么用？</h3>
+      <p>调好边框和参数后，点设置栏旁边的模板按钮，选“将当前设置存为模板”。点模板就能一键套用；在模板上向右滑或长按，可以用它批量导出：一次选最多 50 张照片，按同样的样式依次保存到相册。批量导出是 Pro 功能。</p>
+
+      <h3>6. 保存时提示没有相册权限怎么办？</h3>
       <p>打开“设置 › 隐私与安全性 › 照片 › 白边相框”，选择“仅添加照片”或“完全访问”。也可以在导出页点“打开设置”直接跳转。</p>
 
-      <h3>3. 为什么会提示“允许使用无线数据”？</h3>
+      <h3>7. 为什么会提示“允许使用无线数据”？</h3>
       <p>本 App 只在加载 Pro 价格、购买和恢复购买时通过 Apple 的服务联网。编辑和保存照片不需要网络。如果你之前选了“不允许”，可以在“设置 › 白边相框 › 无线数据”中修改。</p>
 
-      <h3>4. 免费版有什么限制？</h3>
-      <p>免费版每天可以导出 3 张图片，所有功能都可使用。次数按设备本地日期计算，每天 0 点重置。升级 Pro 后不限次数。</p>
+      <h3>8. 免费版有什么限制？</h3>
+      <p>免费版可以使用全部样式、参数和模板，每天可以导出 3 张图片。次数按设备本地日期计算，每天 0 点重置。升级 Pro 后不限次数，并且可以批量导出。</p>
 
-      <h3>5. 导出的照片会保留原来的 EXIF 吗？</h3>
-      <p>会。导出的图片保留原照片的拍摄参数；GPS 位置只有在你开启“位置”选项时才会保留。</p>
+      <h3>9. 导出的照片会保留原来的 EXIF 吗？</h3>
+      <p>会。导出的图片保留原照片的拍摄参数；GPS 位置只有在你开启“拍摄位置”选项时才会保留。</p>
 
-      <h3>6. 换了手机或重装后，Pro 不见了？</h3>
+      <h3>10. 换了手机或重装后，Pro 不见了？</h3>
       <p>请用购买时的 Apple ID 登录 App Store，然后在 App 的升级页面点击“恢复购买”。</p>
 
-      <h3>7. 如何取消订阅？</h3>
+      <h3>11. 如何取消订阅？</h3>
       <p>打开“设置 › [你的名字] › 订阅”，选择“白边相框”后取消。取消后 Pro 会保留到当前周期结束。</p>
 
-      <h3>8. 如何申请退款？</h3>
+      <h3>12. 如何申请退款？</h3>
       <p>付款由 Apple 处理，请访问 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 提交退款申请。</p>
 
-      <h3>9. 我的照片会被上传吗？</h3>
-      <p>不会。所有处理都在你的手机上完成，详见<a href="/PhotoBorder/privacy/">隐私政策</a>。</p>
+      <h3>13. 我的照片会被上传吗？</h3>
+      <p>不会。所有处理都在你的设备上完成，详见<a href="/PhotoBorder/privacy/">隐私政策</a>。</p>
 
-      <p class="meta">找不到答案？发邮件到 <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>，请附上 iPhone 型号和 iOS 版本。</p>
+      <p class="meta">找不到答案？如有任何问题，请发送邮件至 <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>。</p>
     </article>
+    <article class="card" data-lang="zh-Hant">
+      <h1>說明與支援</h1>
+      <h3>1. 為什麼有的照片不顯示拍攝參數？</h3>
+      <p>拍攝參數來自照片裡的 EXIF 資訊。截圖、從 LINE 等聊天 App 儲存的圖片（未選「原始畫質」）、部分修圖 App 匯出的圖片通常不含 EXIF，本 App 會隱藏參數列並給出提示。請盡量選擇相機或手機直接拍攝的原始照片。</p>
 
+      <h3>2. 怎麼切換成拍立得風格？</h3>
+      <p>在「邊框」設定最上方的「樣式」裡選「拍立得」。之後可以調整相紙顏色、顆粒強度和顆粒粗細，在「文字」裡換字體。選深色相紙時，文字會自動變成白色。</p>
+
+      <h3>3. 怎麼帶著邊框拍照？</h3>
+      <p>點首頁或右上角的相機按鈕。取景框裡就是加好邊框的效果，點底部的倍率按鍵可以切換鏡頭和變焦。拍完後照片會直接進入編輯頁面，可以繼續調整再儲存。</p>
+
+      <h3>4. 打不開相機怎麼辦？</h3>
+      <p>打開「設定 › 隱私權與安全性 › 相機」，開啟「白邊相框」。</p>
+
+      <h3>5. 範本和批次匯出怎麼用？</h3>
+      <p>調好邊框和參數後，點設定分頁旁邊的範本按鈕，選「將目前設定存為範本」。點範本就能一鍵套用；在範本上向右滑或長按，可以用它批次匯出：一次選最多 50 張照片，按同樣的樣式依序儲存到相簿。批次匯出是 Pro 功能。</p>
+
+      <h3>6. 儲存時提示沒有相簿權限怎麼辦？</h3>
+      <p>打開「設定 › 隱私權與安全性 › 照片 › 白邊相框」，選擇「僅限加入照片」或「完整取用權」。也可以在匯出頁點「打開設定」直接前往。</p>
+
+      <h3>7. 為什麼會提示「允許使用無線資料」？</h3>
+      <p>本 App 只在載入 Pro 價格、購買和回復購買時透過 Apple 的服務連網。編輯和儲存照片不需要網路。如果你之前選了「不允許」，可以在「設定 › 白邊相框 › 無線資料」中修改。</p>
+
+      <h3>8. 免費版有什麼限制？</h3>
+      <p>免費版可以使用全部樣式、參數和範本，每天可以匯出 3 張圖片。次數按裝置本機日期計算，每天 0 點重設。升級 Pro 後不限次數，還可以批次匯出。</p>
+
+      <h3>9. 匯出的照片會保留原本的 EXIF 嗎？</h3>
+      <p>會。匯出的圖片保留原照片的拍攝參數；GPS 位置只有在你開啟「拍攝位置」選項時才會保留。</p>
+
+      <h3>10. 換了手機或重新安裝後，Pro 不見了？</h3>
+      <p>請用購買時的 Apple ID 登入 App Store，然後在 App 的升級頁面點「回復購買」。</p>
+
+      <h3>11. 如何取消訂閱？</h3>
+      <p>打開「設定 › [你的名字] › 訂閱項目」，選擇「白邊相框」後取消。取消後 Pro 會保留到目前週期結束。</p>
+
+      <h3>12. 如何申請退款？</h3>
+      <p>付款由 Apple 處理，請前往 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 提出退款申請。</p>
+
+      <h3>13. 我的照片會被上傳嗎？</h3>
+      <p>不會。所有處理都在你的裝置上完成，詳見<a href="/PhotoBorder/privacy/">隱私權政策</a>。</p>
+
+      <p class="meta">找不到答案？如有任何問題，請寄信至 <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>。</p>
+    </article>
     <article class="card" data-lang="en">
       <h1>Help &amp; Support</h1>
-
       <h3>1. Why don’t some photos show shooting info?</h3>
       <p>Shooting info comes from the photo’s EXIF data. Screenshots, images saved from chat apps (without “original quality”) and exports from some editing apps usually have no EXIF, so the App hides the info line and tells you why. Pick original photos straight from your camera or phone when possible.</p>
 
-      <h3>2. Saving fails with a photo access message</h3>
+      <h3>2. How do I switch to the Instant style?</h3>
+      <p>Under Border, choose Instant in Style at the top. You can then adjust Paper Color, Grain Strength and Grain Size, and pick a font under Text. On dark paper, the text turns white automatically.</p>
+
+      <h3>3. How do I shoot with the frame?</h3>
+      <p>Tap the camera button on the home screen or at the top right. The viewfinder shows the framed result; tap the zoom buttons at the bottom to switch lenses and zoom. After you take the photo, it opens in the editor so you can fine-tune it before saving.</p>
+
+      <h3>4. The camera won’t open</h3>
+      <p>Go to Settings › Privacy &amp; Security › Camera and turn on PhotoBorder.</p>
+
+      <h3>5. How do templates and batch export work?</h3>
+      <p>Once your border and shot info look right, tap the templates button next to the settings tabs and choose “Save Current Settings as Template”. Tap a template to apply it. Swipe right on a template, or touch and hold it, to batch export with it: pick up to 50 photos and they are saved to your library in the same style, one by one. Batch export is a Pro feature.</p>
+
+      <h3>6. Saving fails with a photo access message</h3>
       <p>Go to Settings › Privacy &amp; Security › Photos › PhotoBorder and choose “Add Photos Only” or “Full Access”. You can also tap “Open Settings” on the export screen.</p>
 
-      <h3>3. Why am I asked to allow cellular data?</h3>
+      <h3>7. Why am I asked to allow cellular data?</h3>
       <p>The App only goes online through Apple’s services to load Pro prices and to purchase or restore. Editing and saving photos work offline. If you chose “Don’t Allow”, change it in Settings › PhotoBorder › Cellular Data.</p>
 
-      <h3>4. What does the free version include?</h3>
-      <p>All features, with 3 exports per day. The count follows your device’s local date and resets at midnight. Pro removes the limit.</p>
+      <h3>8. What does the free version include?</h3>
+      <p>Every style, shot info option and template, with 3 exports per day. The count follows your device’s local date and resets at midnight. Pro removes the limit and adds batch export.</p>
 
-      <h3>5. Do exported photos keep their EXIF?</h3>
+      <h3>9. Do exported photos keep their EXIF?</h3>
       <p>Yes. Exported images keep the original shooting info. GPS location is kept only when the Location option is turned on.</p>
 
-      <h3>6. Pro is missing after switching phones or reinstalling</h3>
+      <h3>10. Pro is missing after switching phones or reinstalling</h3>
       <p>Sign in to the App Store with the Apple ID you purchased with, then tap “Restore Purchases” on the upgrade screen.</p>
 
-      <h3>7. How do I cancel my subscription?</h3>
+      <h3>11. How do I cancel my subscription?</h3>
       <p>Go to Settings › [your name] › Subscriptions, choose PhotoBorder and cancel. Pro stays active until the end of the current period.</p>
 
-      <h3>8. How do I request a refund?</h3>
+      <h3>12. How do I request a refund?</h3>
       <p>Payments are handled by Apple. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> to request a refund.</p>
 
-      <h3>9. Are my photos uploaded?</h3>
-      <p>No. Everything is processed on your iPhone. See the <a href="/PhotoBorder/privacy/">Privacy Policy</a>.</p>
+      <h3>13. Are my photos uploaded?</h3>
+      <p>No. Everything is processed on your device. See the <a href="/PhotoBorder/privacy/">Privacy Policy</a>.</p>
 
-      <p class="meta">Can’t find an answer? Email <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a> with your iPhone model and iOS version.</p>
+      <p class="meta">Can’t find an answer? Questions? Email <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
     </article>
+    <article class="card" data-lang="ja">
+      <h1>ヘルプとサポート</h1>
+      <h3>1. 撮影情報が表示されない写真があるのはなぜですか？</h3>
+      <p>撮影情報は写真の EXIF データから読み取ります。スクリーンショット、チャットアプリから保存した画像（オリジナル画質でないもの）、一部の編集アプリで書き出した画像には通常 EXIF がないため、本アプリは情報欄を隠して理由をお知らせします。できるだけカメラやスマートフォンで撮ったままの写真を選んでください。</p>
 
+      <h3>2. インスタントスタイルに切り替えるには？</h3>
+      <p>「フチ」の一番上にある「スタイル」で「インスタント」を選びます。台紙の色、粒子の強さ、粒子の大きさを調整でき、「テキスト」でフォントも変えられます。暗い台紙を選ぶと、文字は自動で白になります。</p>
+
+      <h3>3. フチ付きで撮影するには？</h3>
+      <p>ホーム画面または右上のカメラボタンをタップします。ファインダーにはフチ付きの仕上がりが表示され、下のズームボタンでレンズとズームを切り替えられます。撮影した写真はそのまま編集画面で開くので、調整してから保存できます。</p>
+
+      <h3>4. カメラが開きません</h3>
+      <p>「設定 › プライバシーとセキュリティ › カメラ」で、フォトボーダーをオンにしてください。</p>
+
+      <h3>5. テンプレートと一括書き出しの使い方は？</h3>
+      <p>フチと撮影情報を整えたら、設定タブの横にあるテンプレートボタンをタップし、「現在の設定をテンプレートとして保存」を選びます。テンプレートをタップすると適用されます。テンプレートを右にスワイプするか長押しすると、そのテンプレートで一括書き出しできます。最大 50 枚の写真を選ぶと、同じスタイルで 1 枚ずつライブラリに保存されます。一括書き出しは Pro の機能です。</p>
+
+      <h3>6. 保存時に写真へのアクセスに関するメッセージが出ます</h3>
+      <p>「設定 › プライバシーとセキュリティ › 写真 › フォトボーダー」で「写真の追加のみ」または「フルアクセス」を選んでください。書き出し画面の「設定を開く」からも移動できます。</p>
+
+      <h3>7. モバイルデータ通信の許可を求められるのはなぜですか？</h3>
+      <p>本アプリがインターネットに接続するのは、Pro の価格を読み込むときと、購入または復元するときに Apple のサービスを通じてだけです。編集と保存はオフラインで使えます。「許可しない」を選んだ場合は、「設定 › フォトボーダー › モバイルデータ通信」で変更できます。</p>
+
+      <h3>8. 無料版でできることは？</h3>
+      <p>すべてのスタイル、撮影情報、テンプレートを使え、1 日 3 枚まで書き出せます。回数はデバイスの日付で数え、毎日 0 時にリセットされます。Pro にすると制限がなくなり、一括書き出しも使えます。</p>
+
+      <h3>9. 書き出した写真に EXIF は残りますか？</h3>
+      <p>はい。書き出した画像には元の撮影情報が残ります。GPS の位置情報は「撮影場所」をオンにした場合にだけ残ります。</p>
+
+      <h3>10. 機種変更や再インストールのあと Pro が使えません</h3>
+      <p>購入時の Apple ID で App Store にサインインし、アップグレード画面の「購入を復元」をタップしてください。</p>
+
+      <h3>11. サブスクリプションを解約するには？</h3>
+      <p>「設定 › [ユーザ名] › サブスクリプション」でフォトボーダーを選び、解約します。Pro は現在の期間が終わるまで使えます。</p>
+
+      <h3>12. 返金を申請するには？</h3>
+      <p>お支払いは Apple が処理しています。<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> から返金を申請してください。</p>
+
+      <h3>13. 写真はアップロードされますか？</h3>
+      <p>いいえ。すべての処理はデバイス上で行われます。詳しくは<a href="/PhotoBorder/privacy/">プライバシーポリシー</a>をご覧ください。</p>
+
+      <p class="meta">答えが見つからない場合：ご質問は <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a> までメールでお寄せください。</p>
+    </article>
+    <article class="card" data-lang="ko">
+      <h1>도움말 및 지원</h1>
+      <h3>1. 일부 사진에 촬영 정보가 표시되지 않는 이유는 무엇인가요?</h3>
+      <p>촬영 정보는 사진의 EXIF 데이터에서 가져옵니다. 스크린샷, 채팅 앱에서 저장한 이미지(원본 화질이 아닌 경우), 일부 편집 앱에서 내보낸 이미지에는 보통 EXIF가 없어서, 앱은 정보 줄을 숨기고 이유를 알려 드립니다. 가능하면 카메라나 휴대폰으로 찍은 원본 사진을 선택해 주세요.</p>
+
+      <h3>2. 인스턴트 스타일로 바꾸려면?</h3>
+      <p>‘테두리’ 맨 위의 ‘스타일’에서 ‘인스턴트’를 선택하세요. 인화지 색상, 입자 강도, 입자 크기를 조절할 수 있고 ‘텍스트’에서 글꼴을 바꿀 수 있습니다. 어두운 인화지를 고르면 글자가 자동으로 흰색이 됩니다.</p>
+
+      <h3>3. 테두리를 보며 촬영하려면?</h3>
+      <p>홈 화면이나 오른쪽 위의 카메라 버튼을 탭하세요. 뷰파인더에 테두리가 적용된 결과가 보이며, 아래의 줌 버튼으로 렌즈와 배율을 바꿀 수 있습니다. 촬영한 사진은 바로 편집 화면에서 열리므로 조정한 뒤 저장할 수 있습니다.</p>
+
+      <h3>4. 카메라가 열리지 않아요</h3>
+      <p>설정 › 개인정보 보호 및 보안 › 카메라에서 포토보더를 켜 주세요.</p>
+
+      <h3>5. 템플릿과 일괄 내보내기는 어떻게 쓰나요?</h3>
+      <p>테두리와 촬영 정보를 맞춘 뒤 설정 탭 옆의 템플릿 버튼을 탭하고 ‘현재 설정을 템플릿으로 저장’을 선택하세요. 템플릿을 탭하면 적용됩니다. 템플릿을 오른쪽으로 쓸어 넘기거나 길게 누르면 그 템플릿으로 일괄 내보내기를 할 수 있습니다. 사진을 최대 50장 고르면 같은 스타일로 한 장씩 보관함에 저장됩니다. 일괄 내보내기는 Pro 기능입니다.</p>
+
+      <h3>6. 저장할 때 사진 접근 권한 메시지가 나와요</h3>
+      <p>설정 › 개인정보 보호 및 보안 › 사진 › 포토보더에서 ‘사진 추가만 허용’ 또는 ‘전체 접근’을 선택하세요. 내보내기 화면의 ‘설정 열기’로 바로 이동할 수도 있습니다.</p>
+
+      <h3>7. 셀룰러 데이터 허용을 묻는 이유는 무엇인가요?</h3>
+      <p>앱은 Pro 가격을 불러오거나 구입·복원할 때에만 Apple의 서비스를 통해 인터넷에 연결합니다. 편집과 저장은 오프라인에서도 됩니다. ‘허용 안 함’을 선택했다면 설정 › 포토보더 › 셀룰러 데이터에서 바꿀 수 있습니다.</p>
+
+      <h3>8. 무료 버전에는 무엇이 포함되나요?</h3>
+      <p>모든 스타일, 촬영 정보 옵션, 템플릿을 쓸 수 있고 하루 3장까지 내보낼 수 있습니다. 횟수는 기기의 날짜 기준이며 매일 자정에 초기화됩니다. Pro로 업그레이드하면 제한이 없어지고 일괄 내보내기도 쓸 수 있습니다.</p>
+
+      <h3>9. 내보낸 사진에 EXIF가 남나요?</h3>
+      <p>네. 내보낸 이미지에는 원본 촬영 정보가 남습니다. GPS 위치는 ‘촬영 위치’ 옵션을 켠 경우에만 남습니다.</p>
+
+      <h3>10. 휴대폰을 바꾸거나 다시 설치한 뒤 Pro가 사라졌어요</h3>
+      <p>구입할 때 쓴 Apple ID로 App Store에 로그인한 뒤, 업그레이드 화면에서 ‘구매 복원’을 탭하세요.</p>
+
+      <h3>11. 구독을 취소하려면?</h3>
+      <p>설정 › [사용자 이름] › 구독에서 포토보더를 선택해 취소하세요. Pro는 현재 기간이 끝날 때까지 유지됩니다.</p>
+
+      <h3>12. 환불을 요청하려면?</h3>
+      <p>결제는 Apple이 처리합니다. <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>에서 환불을 요청하세요.</p>
+
+      <h3>13. 내 사진이 업로드되나요?</h3>
+      <p>아니요. 모든 처리는 기기에서 이루어집니다. 자세한 내용은 <a href="/PhotoBorder/privacy/">개인정보 처리방침</a>을 참고하세요.</p>
+
+      <p class="meta">답을 찾지 못하셨나요? 문의 사항은 <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>(으)로 이메일을 보내 주세요.</p>
+    </article>
+    <article class="card" data-lang="fr">
+      <h1>Aide et assistance</h1>
+      <h3>1. Pourquoi certaines photos n’affichent-elles pas d’infos de prise de vue ?</h3>
+      <p>Les infos proviennent des données EXIF de la photo. Les captures d’écran, les images enregistrées depuis une messagerie (sans « qualité originale ») et les exports de certaines apps de retouche n’en contiennent généralement pas ; l’app masque alors la ligne d’infos et vous en indique la raison. Choisissez de préférence des photos originales issues de votre appareil ou de votre téléphone.</p>
+
+      <h3>2. Comment passer au style Instantané ?</h3>
+      <p>Dans Bordure, choisissez Instantané dans Style, tout en haut. Vous pouvez ensuite régler la couleur du papier, l’intensité et la taille du grain, et choisir une police dans Texte. Sur un papier foncé, le texte passe automatiquement en blanc.</p>
+
+      <h3>3. Comment photographier avec le cadre ?</h3>
+      <p>Touchez le bouton appareil photo sur l’écran d’accueil ou en haut à droite. Le viseur affiche le résultat encadré ; touchez les boutons de zoom en bas pour changer d’objectif et de zoom. Une fois prise, la photo s’ouvre dans l’éditeur pour que vous puissiez l’ajuster avant de l’enregistrer.</p>
+
+      <h3>4. L’appareil photo ne s’ouvre pas</h3>
+      <p>Allez dans Réglages › Confidentialité et sécurité › Appareil photo et activez PhotoBorder.</p>
+
+      <h3>5. Comment fonctionnent les modèles et l’export par lot ?</h3>
+      <p>Une fois la bordure et les infos réglées, touchez le bouton des modèles à côté des onglets de réglages et choisissez « Enregistrer les réglages actuels comme modèle ». Touchez un modèle pour l’appliquer. Balayez un modèle vers la droite, ou maintenez le doigt dessus, pour lancer un export par lot : choisissez jusqu’à 50 photos, elles sont enregistrées une à une dans le même style. L’export par lot est une fonction Pro.</p>
+
+      <h3>6. L’enregistrement échoue avec un message d’accès aux photos</h3>
+      <p>Allez dans Réglages › Confidentialité et sécurité › Photos › PhotoBorder et choisissez « Ajouter des photos uniquement » ou « Accès complet ». Vous pouvez aussi toucher « Ouvrir Réglages » sur l’écran d’export.</p>
+
+      <h3>7. Pourquoi l’app demande-t-elle l’accès aux données cellulaires ?</h3>
+      <p>L’app ne se connecte que via les services d’Apple, pour charger les prix Pro et pour acheter ou restaurer. Retoucher et enregistrer fonctionnent hors ligne. Si vous avez refusé, modifiez ce choix dans Réglages › PhotoBorder › Données cellulaires.</p>
+
+      <h3>8. Que comprend la version gratuite ?</h3>
+      <p>Tous les styles, toutes les infos de prise de vue et les modèles, avec 3 exports par jour. Le compteur suit la date locale de votre appareil et se remet à zéro à minuit. Pro supprime la limite et ajoute l’export par lot.</p>
+
+      <h3>9. Les photos exportées conservent-elles leurs EXIF ?</h3>
+      <p>Oui. Les images exportées conservent les infos de prise de vue d’origine. La position GPS n’est conservée que si l’option Lieu est activée.</p>
+
+      <h3>10. Pro a disparu après un changement de téléphone ou une réinstallation</h3>
+      <p>Connectez-vous à l’App Store avec l’identifiant Apple utilisé pour l’achat, puis touchez « Restaurer les achats » sur l’écran de mise à niveau.</p>
+
+      <h3>11. Comment résilier mon abonnement ?</h3>
+      <p>Allez dans Réglages › [votre nom] › Abonnements, choisissez PhotoBorder et résiliez. Pro reste actif jusqu’à la fin de la période en cours.</p>
+
+      <h3>12. Comment demander un remboursement ?</h3>
+      <p>Les paiements sont traités par Apple. Rendez-vous sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> pour demander un remboursement.</p>
+
+      <h3>13. Mes photos sont-elles envoyées ?</h3>
+      <p>Non. Tout est traité sur votre appareil. Consultez la <a href="/PhotoBorder/privacy/">politique de confidentialité</a>.</p>
+
+      <p class="meta">Vous ne trouvez pas de réponse ? Une question ? Écrivez à <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
+    <article class="card" data-lang="es">
+      <h1>Ayuda y soporte</h1>
+      <h3>1. ¿Por qué algunas fotos no muestran los datos de la toma?</h3>
+      <p>Los datos proceden del EXIF de la foto. Las capturas de pantalla, las imágenes guardadas desde apps de mensajería (sin «calidad original») y las exportadas desde algunas apps de edición no suelen tener EXIF, así que la app oculta la línea de datos y te explica el motivo. Siempre que puedas, elige fotos originales de tu cámara o tu teléfono.</p>
+
+      <h3>2. ¿Cómo cambio al estilo Instantánea?</h3>
+      <p>En Borde, elige Instantánea en Estilo, arriba del todo. Después puedes ajustar el color del papel, la intensidad y el tamaño del grano, y elegir una fuente en Texto. Con papel oscuro, el texto pasa a blanco automáticamente.</p>
+
+      <h3>3. ¿Cómo hago fotos con el marco?</h3>
+      <p>Toca el botón de cámara en la pantalla de inicio o arriba a la derecha. El visor muestra el resultado enmarcado; toca los botones de zoom de abajo para cambiar de objetivo y de zoom. Al tomar la foto, se abre en el editor para que la ajustes antes de guardarla.</p>
+
+      <h3>4. La cámara no se abre</h3>
+      <p>Ve a Ajustes › Privacidad y seguridad › Cámara y activa PhotoBorder.</p>
+
+      <h3>5. ¿Cómo funcionan las plantillas y la exportación por lotes?</h3>
+      <p>Cuando el borde y los datos estén a tu gusto, toca el botón de plantillas junto a las pestañas de ajustes y elige «Guardar los ajustes actuales como plantilla». Toca una plantilla para aplicarla. Desliza una plantilla hacia la derecha, o mantenla pulsada, para exportar por lotes con ella: elige hasta 50 fotos y se guardarán una a una con el mismo estilo. La exportación por lotes es una función Pro.</p>
+
+      <h3>6. Al guardar aparece un mensaje de acceso a las fotos</h3>
+      <p>Ve a Ajustes › Privacidad y seguridad › Fotos › PhotoBorder y elige «Solo añadir fotos» o «Acceso completo». También puedes tocar «Abrir Ajustes» en la pantalla de exportación.</p>
+
+      <h3>7. ¿Por qué me pide permiso para usar datos móviles?</h3>
+      <p>La app solo se conecta a través de los servicios de Apple para cargar los precios de Pro y para comprar o restaurar. Editar y guardar funcionan sin conexión. Si elegiste «No permitir», cámbialo en Ajustes › PhotoBorder › Datos móviles.</p>
+
+      <h3>8. ¿Qué incluye la versión gratuita?</h3>
+      <p>Todos los estilos, datos de la toma y plantillas, con 3 exportaciones al día. El contador sigue la fecha local de tu dispositivo y se reinicia a medianoche. Pro elimina el límite y añade la exportación por lotes.</p>
+
+      <h3>9. ¿Las fotos exportadas conservan el EXIF?</h3>
+      <p>Sí. Las imágenes exportadas conservan los datos de la toma originales. La ubicación GPS solo se conserva si la opción Ubicación está activada.</p>
+
+      <h3>10. Pro ha desaparecido tras cambiar de teléfono o reinstalar</h3>
+      <p>Inicia sesión en el App Store con el Apple ID con el que compraste y toca «Restaurar compras» en la pantalla de mejora.</p>
+
+      <h3>11. ¿Cómo cancelo la suscripción?</h3>
+      <p>Ve a Ajustes › [tu nombre] › Suscripciones, elige PhotoBorder y cancela. Pro sigue activo hasta el final del periodo actual.</p>
+
+      <h3>12. ¿Cómo pido un reembolso?</h3>
+      <p>Apple gestiona los pagos. Visita <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> para solicitar un reembolso.</p>
+
+      <h3>13. ¿Se suben mis fotos?</h3>
+      <p>No. Todo se procesa en tu dispositivo. Consulta la <a href="/PhotoBorder/privacy/">política de privacidad</a>.</p>
+
+      <p class="meta">¿No encuentras la respuesta? ¿Tienes alguna pregunta? Escribe a <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
+    <article class="card" data-lang="de">
+      <h1>Hilfe &amp; Support</h1>
+      <h3>1. Warum zeigen manche Fotos keine Aufnahmedaten?</h3>
+      <p>Die Aufnahmedaten stammen aus den EXIF-Daten des Fotos. Bildschirmfotos, aus Chat-Apps gesicherte Bilder (ohne „Originalqualität“) und Exporte mancher Bearbeitungs-Apps haben meist keine EXIF-Daten. Die App blendet die Infozeile dann aus und sagt dir, warum. Wähle nach Möglichkeit Originalfotos direkt aus Kamera oder Smartphone.</p>
+
+      <h3>2. Wie wechsle ich zum Sofortbild-Stil?</h3>
+      <p>Wähle unter Rahmen ganz oben bei Stil „Sofortbild“. Dann kannst du Papierfarbe, Körnungsstärke und Körnungsgröße einstellen und unter Text eine Schrift wählen. Auf dunklem Papier wird der Text automatisch weiß.</p>
+
+      <h3>3. Wie fotografiere ich mit dem Rahmen?</h3>
+      <p>Tippe auf die Kamerataste auf dem Startbildschirm oder oben rechts. Der Sucher zeigt das gerahmte Ergebnis; mit den Zoomtasten unten wechselst du Objektiv und Zoom. Nach der Aufnahme öffnet sich das Foto im Editor, damit du es vor dem Sichern anpassen kannst.</p>
+
+      <h3>4. Die Kamera öffnet sich nicht</h3>
+      <p>Öffne Einstellungen › Datenschutz &amp; Sicherheit › Kamera und schalte PhotoBorder ein.</p>
+
+      <h3>5. Wie funktionieren Vorlagen und Stapelexport?</h3>
+      <p>Wenn Rahmen und Aufnahmedaten passen, tippe auf die Vorlagentaste neben den Einstellungs-Tabs und wähle „Aktuelle Einstellungen als Vorlage sichern“. Tippe auf eine Vorlage, um sie anzuwenden. Wische auf einer Vorlage nach rechts oder halte sie gedrückt, um damit einen Stapelexport zu starten: Wähle bis zu 50 Fotos, und sie werden nacheinander im selben Stil gesichert. Der Stapelexport ist eine Pro-Funktion.</p>
+
+      <h3>6. Beim Sichern erscheint eine Meldung zum Fotozugriff</h3>
+      <p>Öffne Einstellungen › Datenschutz &amp; Sicherheit › Fotos › PhotoBorder und wähle „Nur Fotos hinzufügen“ oder „Voller Zugriff“. Du kannst auch auf dem Exportbildschirm auf „Einstellungen öffnen“ tippen.</p>
+
+      <h3>7. Warum werde ich nach mobilen Daten gefragt?</h3>
+      <p>Die App geht nur über Apples Dienste online, um Pro-Preise zu laden und zu kaufen oder wiederherzustellen. Bearbeiten und Sichern funktionieren offline. Wenn du „Nicht erlauben“ gewählt hast, ändere das unter Einstellungen › PhotoBorder › Mobile Daten.</p>
+
+      <h3>8. Was bietet die kostenlose Version?</h3>
+      <p>Alle Stile, Aufnahmedaten und Vorlagen, mit 3 Exporten pro Tag. Die Zählung folgt dem lokalen Datum deines Geräts und wird um Mitternacht zurückgesetzt. Pro hebt das Limit auf und bietet den Stapelexport.</p>
+
+      <h3>9. Behalten exportierte Fotos ihre EXIF-Daten?</h3>
+      <p>Ja. Exportierte Bilder behalten die ursprünglichen Aufnahmedaten. Der GPS-Standort bleibt nur erhalten, wenn die Option „Ort“ eingeschaltet ist.</p>
+
+      <h3>10. Pro fehlt nach einem Gerätewechsel oder einer Neuinstallation</h3>
+      <p>Melde dich im App Store mit der Apple-ID an, mit der du gekauft hast, und tippe auf dem Upgrade-Bildschirm auf „Käufe wiederherstellen“.</p>
+
+      <h3>11. Wie kündige ich mein Abo?</h3>
+      <p>Öffne Einstellungen › [dein Name] › Abonnements, wähle PhotoBorder und kündige. Pro bleibt bis zum Ende des aktuellen Zeitraums aktiv.</p>
+
+      <h3>12. Wie beantrage ich eine Rückerstattung?</h3>
+      <p>Zahlungen werden von Apple abgewickelt. Besuche <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, um eine Rückerstattung zu beantragen.</p>
+
+      <h3>13. Werden meine Fotos hochgeladen?</h3>
+      <p>Nein. Alles wird auf deinem Gerät verarbeitet. Siehe <a href="/PhotoBorder/privacy/">Datenschutzrichtlinie</a>.</p>
+
+      <p class="meta">Keine Antwort gefunden? Fragen? Schreib an <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
+    <article class="card" data-lang="pt-BR">
+      <h1>Ajuda e suporte</h1>
+      <h3>1. Por que algumas fotos não mostram os dados da foto?</h3>
+      <p>Os dados vêm do EXIF da foto. Capturas de tela, imagens salvas de apps de mensagem (sem “qualidade original”) e exportações de alguns apps de edição geralmente não têm EXIF; nesse caso o app oculta a linha de dados e explica o motivo. Sempre que possível, escolha fotos originais da câmera ou do celular.</p>
+
+      <h3>2. Como mudo para o estilo Instantânea?</h3>
+      <p>Em Borda, escolha Instantânea em Estilo, no topo. Depois você pode ajustar a cor do papel, a intensidade e o tamanho do grão e escolher uma fonte em Texto. Em papel escuro, o texto fica branco automaticamente.</p>
+
+      <h3>3. Como fotografo com a moldura?</h3>
+      <p>Toque no botão da câmera na tela inicial ou no canto superior direito. O visor mostra o resultado com a borda; toque nos botões de zoom embaixo para trocar de lente e de zoom. Depois de tirar a foto, ela abre no editor para você ajustar antes de salvar.</p>
+
+      <h3>4. A câmera não abre</h3>
+      <p>Vá em Ajustes › Privacidade e Segurança › Câmera e ative o PhotoBorder.</p>
+
+      <h3>5. Como funcionam os modelos e a exportação em lote?</h3>
+      <p>Quando a borda e os dados estiverem do seu jeito, toque no botão de modelos ao lado das abas de ajustes e escolha “Salvar ajustes atuais como modelo”. Toque em um modelo para aplicá-lo. Deslize um modelo para a direita, ou mantenha-o pressionado, para exportar em lote com ele: escolha até 50 fotos e elas serão salvas uma a uma no mesmo estilo. A exportação em lote é um recurso Pro.</p>
+
+      <h3>6. Ao salvar aparece uma mensagem de acesso às fotos</h3>
+      <p>Vá em Ajustes › Privacidade e Segurança › Fotos › PhotoBorder e escolha “Somente Adicionar Fotos” ou “Acesso Total”. Você também pode tocar em “Abrir Ajustes” na tela de exportação.</p>
+
+      <h3>7. Por que o app pede para usar dados celulares?</h3>
+      <p>O app só se conecta pelos serviços da Apple para carregar os preços do Pro e para comprar ou restaurar. Editar e salvar funcionam offline. Se você escolheu “Não Permitir”, altere em Ajustes › PhotoBorder › Dados Celulares.</p>
+
+      <h3>8. O que a versão gratuita inclui?</h3>
+      <p>Todos os estilos, dados da foto e modelos, com 3 exportações por dia. A contagem segue a data local do dispositivo e zera à meia-noite. O Pro remove o limite e inclui a exportação em lote.</p>
+
+      <h3>9. As fotos exportadas mantêm o EXIF?</h3>
+      <p>Sim. As imagens exportadas mantêm os dados originais da foto. A localização GPS só é mantida quando a opção Local está ativada.</p>
+
+      <h3>10. O Pro sumiu depois de trocar de celular ou reinstalar</h3>
+      <p>Entre na App Store com o ID Apple usado na compra e toque em “Restaurar compras” na tela de upgrade.</p>
+
+      <h3>11. Como cancelo a assinatura?</h3>
+      <p>Vá em Ajustes › [seu nome] › Assinaturas, escolha PhotoBorder e cancele. O Pro continua ativo até o fim do período atual.</p>
+
+      <h3>12. Como peço reembolso?</h3>
+      <p>Os pagamentos são processados pela Apple. Acesse <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> para solicitar um reembolso.</p>
+
+      <h3>13. Minhas fotos são enviadas?</h3>
+      <p>Não. Tudo é processado no seu dispositivo. Veja a <a href="/PhotoBorder/privacy/">política de privacidade</a>.</p>
+
+      <p class="meta">Não encontrou a resposta? Dúvidas? Envie um e-mail para <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
+    <article class="card" data-lang="it">
+      <h1>Aiuto e supporto</h1>
+      <h3>1. Perché alcune foto non mostrano i dati di scatto?</h3>
+      <p>I dati di scatto provengono dagli EXIF della foto. Screenshot, immagini salvate da app di messaggistica (senza “qualità originale”) ed esportazioni di alcune app di fotoritocco di solito non hanno EXIF, quindi l’app nasconde la riga dei dati e ti spiega perché. Quando puoi, scegli foto originali dalla fotocamera o dal telefono.</p>
+
+      <h3>2. Come passo allo stile Istantanea?</h3>
+      <p>In Cornice, scegli Istantanea in Stile, in alto. Puoi poi regolare il colore della carta, l’intensità e la dimensione della grana e scegliere un font in Testo. Con la carta scura, il testo diventa bianco in automatico.</p>
+
+      <h3>3. Come scatto con la cornice?</h3>
+      <p>Tocca il pulsante della fotocamera nella schermata iniziale o in alto a destra. Il mirino mostra il risultato incorniciato; tocca i pulsanti di zoom in basso per cambiare obiettivo e zoom. Dopo lo scatto la foto si apre nell’editor, così puoi ritoccarla prima di salvarla.</p>
+
+      <h3>4. La fotocamera non si apre</h3>
+      <p>Vai in Impostazioni › Privacy e sicurezza › Fotocamera e attiva PhotoBorder.</p>
+
+      <h3>5. Come funzionano i modelli e l’esportazione in blocco?</h3>
+      <p>Quando bordo e dati di scatto ti convincono, tocca il pulsante dei modelli accanto alle schede delle impostazioni e scegli “Salva le impostazioni attuali come modello”. Tocca un modello per applicarlo. Scorri un modello verso destra, o tienilo premuto, per esportare in blocco: scegli fino a 50 foto e verranno salvate una alla volta con lo stesso stile. L’esportazione in blocco è una funzione Pro.</p>
+
+      <h3>6. Al salvataggio compare un messaggio sull’accesso alle foto</h3>
+      <p>Vai in Impostazioni › Privacy e sicurezza › Foto › PhotoBorder e scegli “Aggiungi solo foto” o “Accesso completo”. Puoi anche toccare “Apri Impostazioni” nella schermata di esportazione.</p>
+
+      <h3>7. Perché mi viene chiesto di consentire i dati cellulare?</h3>
+      <p>L’app si connette solo tramite i servizi di Apple per caricare i prezzi di Pro e per acquistare o ripristinare. Modificare e salvare funzionano offline. Se hai scelto “Non consentire”, cambialo in Impostazioni › PhotoBorder › Dati cellulare.</p>
+
+      <h3>8. Cosa include la versione gratuita?</h3>
+      <p>Tutti gli stili, i dati di scatto e i modelli, con 3 esportazioni al giorno. Il conteggio segue la data locale del dispositivo e si azzera a mezzanotte. Pro elimina il limite e aggiunge l’esportazione in blocco.</p>
+
+      <h3>9. Le foto esportate mantengono gli EXIF?</h3>
+      <p>Sì. Le immagini esportate mantengono i dati di scatto originali. La posizione GPS viene mantenuta solo se l’opzione Luogo è attiva.</p>
+
+      <h3>10. Pro è sparito dopo un cambio di telefono o una reinstallazione</h3>
+      <p>Accedi ad App Store con l’ID Apple usato per l’acquisto, poi tocca “Ripristina acquisti” nella schermata di upgrade.</p>
+
+      <h3>11. Come annullo l’abbonamento?</h3>
+      <p>Vai in Impostazioni › [il tuo nome] › Abbonamenti, scegli PhotoBorder e annulla. Pro resta attivo fino alla fine del periodo in corso.</p>
+
+      <h3>12. Come chiedo un rimborso?</h3>
+      <p>I pagamenti sono gestiti da Apple. Visita <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> per richiedere un rimborso.</p>
+
+      <h3>13. Le mie foto vengono caricate?</h3>
+      <p>No. Tutto viene elaborato sul tuo dispositivo. Consulta l’<a href="/PhotoBorder/privacy/">informativa sulla privacy</a>.</p>
+
+      <p class="meta">Non trovi la risposta? Domande? Scrivi a <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
+    <article class="card" data-lang="ru">
+      <h1>Помощь и поддержка</h1>
+      <h3>1. Почему на некоторых фото нет данных съёмки?</h3>
+      <p>Данные съёмки берутся из EXIF фото. В скриншотах, изображениях, сохранённых из мессенджеров (не в исходном качестве), и экспортах некоторых редакторов EXIF обычно нет, поэтому приложение скрывает строку данных и объясняет причину. По возможности выбирайте исходные снимки с камеры или телефона.</p>
+
+      <h3>2. Как переключиться на стиль «Моментальное фото»?</h3>
+      <p>В разделе «Рамка» выберите «Моментальное фото» в пункте «Стиль» в самом верху. Затем можно настроить цвет бумаги, силу и размер зерна, а в разделе «Текст» — выбрать шрифт. На тёмной бумаге текст автоматически становится белым.</p>
+
+      <h3>3. Как снимать с рамкой?</h3>
+      <p>Нажмите кнопку камеры на главном экране или в правом верхнем углу. В видоискателе виден результат с рамкой; кнопки зума внизу переключают объективы и увеличение. Снятое фото сразу открывается в редакторе, где его можно доработать перед сохранением.</p>
+
+      <h3>4. Камера не открывается</h3>
+      <p>Откройте «Настройки» › «Конфиденциальность и безопасность» › «Камера» и включите PhotoBorder.</p>
+
+      <h3>5. Как работают шаблоны и пакетный экспорт?</h3>
+      <p>Настроив рамку и данные съёмки, нажмите кнопку шаблонов рядом с вкладками настроек и выберите «Сохранить текущие настройки как шаблон». Нажмите на шаблон, чтобы применить его. Смахните шаблон вправо или нажмите и удерживайте его, чтобы запустить пакетный экспорт: выберите до 50 фото, и они по очереди сохранятся в том же стиле. Пакетный экспорт — функция Pro.</p>
+
+      <h3>6. При сохранении появляется сообщение о доступе к фото</h3>
+      <p>Откройте «Настройки» › «Конфиденциальность и безопасность» › «Фото» › PhotoBorder и выберите «Только добавление фото» или «Полный доступ». Можно также нажать «Открыть Настройки» на экране экспорта.</p>
+
+      <h3>7. Почему приложение просит доступ к сотовым данным?</h3>
+      <p>Приложение подключается только через сервисы Apple — чтобы загрузить цены Pro, купить или восстановить покупки. Редактирование и сохранение работают без сети. Если вы выбрали «Не разрешать», измените это в «Настройки» › PhotoBorder › «Сотовые данные».</p>
+
+      <h3>8. Что есть в бесплатной версии?</h3>
+      <p>Все стили, данные съёмки и шаблоны, плюс 3 экспорта в день. Счётчик идёт по местной дате устройства и сбрасывается в полночь. Pro снимает ограничение и добавляет пакетный экспорт.</p>
+
+      <h3>9. Сохраняют ли экспортированные фото EXIF?</h3>
+      <p>Да. Экспортированные изображения сохраняют исходные данные съёмки. GPS-координаты сохраняются, только если включена опция «Место».</p>
+
+      <h3>10. Pro пропал после смены телефона или переустановки</h3>
+      <p>Войдите в App Store с тем Apple ID, с которого делали покупку, и нажмите «Восстановить покупки» на экране улучшения.</p>
+
+      <h3>11. Как отменить подписку?</h3>
+      <p>Откройте «Настройки» › [ваше имя] › «Подписки», выберите PhotoBorder и отмените. Pro будет действовать до конца текущего периода.</p>
+
+      <h3>12. Как запросить возврат средств?</h3>
+      <p>Платежи обрабатывает Apple. Запросить возврат можно на <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+      <h3>13. Загружаются ли мои фото?</h3>
+      <p>Нет. Всё обрабатывается на вашем устройстве. Подробнее — в <a href="/PhotoBorder/privacy/">политике конфиденциальности</a>.</p>
+
+      <p class="meta">Не нашли ответа? Есть вопросы? Напишите на <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
     <footer class="site">© 2026 NiceRhythm</footer>
   </div>
 </body>

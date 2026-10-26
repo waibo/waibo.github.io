@@ -44,17 +44,16 @@ header.site {
   padding: 18px 0;
 }
 header.site .brand { font-weight: 600; color: var(--text); }
-.lang-switch button {
+.lang-select {
   border: 1px solid var(--line);
   background: var(--card);
-  color: var(--muted);
+  color: var(--text);
   border-radius: 999px;
-  padding: 4px 12px;
+  padding: 5px 12px;
+  font: inherit;
   font-size: 14px;
   cursor: pointer;
-  margin-left: 6px;
 }
-.lang-switch button.active { color: var(--accent); border-color: var(--accent); }
 
 .hero { text-align: center; padding: 48px 0 24px; }
 .hero img.icon {
@@ -135,6 +134,19 @@ footer.site {
   padding: 20px 0 32px;
 }
 
-/* 语言切换：只隐藏另一种语言；没有 JS 时两种语言都显示 */
-html.lang-zh [data-lang="en"],
-html.lang-en [data-lang="zh"] { display: none !important; }
+/* 语言切换：只显示当前语言；没有 JS 时显示默认的简体中文 */
+html[data-ui="zh-Hans"] [data-lang]:not([data-lang="zh-Hans"]),
+html[data-ui="zh-Hant"] [data-lang]:not([data-lang="zh-Hant"]),
+html[data-ui="en"] [data-lang]:not([data-lang="en"]),
+html[data-ui="ja"] [data-lang]:not([data-lang="ja"]),
+html[data-ui="ko"] [data-lang]:not([data-lang="ko"]),
+html[data-ui="fr"] [data-lang]:not([data-lang="fr"]),
+html[data-ui="es"] [data-lang]:not([data-lang="es"]),
+html[data-ui="de"] [data-lang]:not([data-lang="de"]),
+html[data-ui="pt-BR"] [data-lang]:not([data-lang="pt-BR"]),
+html[data-ui="it"] [data-lang]:not([data-lang="it"]),
+html[data-ui="ru"] [data-lang]:not([data-lang="ru"]) { display: none !important; }
+
+html[lang="zh-Hant"] body { font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", sans-serif; }
+html[lang="ja"] body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; }
+html[lang="ko"] body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }

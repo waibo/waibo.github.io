@@ -1,12 +1,21 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-ui="zh-Hans">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>白边相框 PhotoBorder</title>
-  <meta name="title-zh" content="白边相框 - 给照片加白边，印上拍摄参数">
+  <title>白边相框 - 给照片加白边，印上拍摄参数</title>
+  <meta name="title-zh-Hans" content="白边相框 - 给照片加白边，印上拍摄参数">
+  <meta name="title-zh-Hant" content="白邊相框 - 為照片加白邊，印上拍攝參數">
   <meta name="title-en" content="PhotoBorder - White borders with your shot info">
-  <meta name="description" content="给照片加白边，把光圈、快门、ISO 印在边框上。Add a white border to your photos and print the aperture, shutter speed and ISO underneath.">
+  <meta name="title-ja" content="フォトボーダー - 撮影情報入りの白フチ写真に">
+  <meta name="title-ko" content="포토보더 - 촬영 정보를 담은 흰 테두리 사진">
+  <meta name="title-fr" content="PhotoBorder - Bordure blanche et infos photo">
+  <meta name="title-es" content="PhotoBorder - Bordes blancos con datos EXIF">
+  <meta name="title-de" content="PhotoBorder - Weißer Rand mit Aufnahmedaten">
+  <meta name="title-pt-BR" content="PhotoBorder - Borda branca com dados da foto">
+  <meta name="title-it" content="PhotoBorder - Bordo bianco e dati di scatto">
+  <meta name="title-ru" content="PhotoBorder - Белая рамка и данные съёмки">
+  <meta name="description" content="Add a white border to your photos and print the aperture, shutter speed and ISO underneath.">
   <link rel="icon" href="/assets/favicon.png">
   <link rel="apple-touch-icon" href="/assets/app-icon.png">
   <link rel="stylesheet" href="/assets/style.css">
@@ -16,53 +25,437 @@
   <div class="wrap">
     <header class="site">
       <a class="brand" href="/">Home</a>
-      <div class="lang-switch"><button data-set="zh">中文</button><button data-set="en">EN</button></div>
+      <select class="lang-select" aria-label="Language"><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="fr">Français</option><option value="es">Español</option><option value="de">Deutsch</option><option value="pt-BR">Português (Brasil)</option><option value="it">Italiano</option><option value="ru">Русский</option></select>
     </header>
-
-    <section class="hero">
-      <img class="icon" src="/assets/app-icon.png" alt="">
-      <h1 data-lang="zh">白边相框</h1>
-      <h1 data-lang="en">PhotoBorder</h1>
-      <p class="tagline" data-lang="zh">给照片加白边，印上拍摄参数</p>
-      <p class="tagline" data-lang="en">White borders with your shot info</p>
-      <!-- 上架后把 href 换成 App Store 链接，并去掉 disabled -->
-      <a class="button disabled" href="#" data-lang="zh">即将登陆 App Store</a>
-      <a class="button disabled" href="#" data-lang="en">Coming soon to the App Store</a>
-    </section>
-
-    <section class="features">
-      <div class="feature">
-        <h3 data-lang="zh">干净的白边</h3>
-        <h3 data-lang="en">Clean white borders</h3>
-        <p data-lang="zh">9 种画布比例，边框宽度、底部高度、颜色都能调，还支持双层边框。</p>
-        <p data-lang="en">9 canvas ratios, adjustable width, bottom area and color, plus an optional inner border.</p>
+    <div data-lang="zh-Hans">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>白边相框</h1>
+        <p class="tagline">给照片加白边，印上拍摄参数</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">在 App Store 下载</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>白边与拍立得</h3>
+          <p>经典白边框，或者换成拍立得风格：相纸颜色、颗粒强度和粗细都能调，还有手写字体可选。</p>
+        </div>
+        <div class="feature">
+          <h3>拍摄参数</h3>
+          <p>自动读取 EXIF：品牌、机型、镜头、焦距、光圈、快门、ISO、日期，想显示哪项就开哪项。</p>
+        </div>
+        <div class="feature">
+          <h3>带着边框拍照</h3>
+          <p>取景时就能看到加好边框的成品，参数实时更新；变焦按键和系统相机一样，支持 0.5× 到 8×。</p>
+        </div>
+        <div class="feature">
+          <h3>模板与批量导出</h3>
+          <p>常用设置存成模板，一键套用。Pro 可以用模板批量导出，一次最多 50 张。</p>
+        </div>
+        <div class="feature">
+          <h3>自由调整，原图保存</h3>
+          <p>9 种画布比例，边框、内边框、文字排版和颜色都能调；按原图或指定尺寸保存，保留 EXIF。</p>
+        </div>
+        <div class="feature">
+          <h3>本地处理</h3>
+          <p>照片只在你的设备上处理，不上传、不收集任何个人数据。</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">帮助与支持</a>
+        <a href="/PhotoBorder/privacy/">隐私政策</a>
+        <a href="/PhotoBorder/terms/">Pro 服务条款</a>
       </div>
-      <div class="feature">
-        <h3 data-lang="zh">拍摄参数</h3>
-        <h3 data-lang="en">Shot info</h3>
-        <p data-lang="zh">自动读取 EXIF：机型、镜头、焦距、光圈、快门、ISO、时间，想显示哪项就开哪项。</p>
-        <p data-lang="en">Reads EXIF automatically: camera, lens, focal length, aperture, shutter, ISO and date. Show only what you want.</p>
-      </div>
-      <div class="feature">
-        <h3 data-lang="zh">实时预览，原图保存</h3>
-        <h3 data-lang="en">Live preview, full-res export</h3>
-        <p data-lang="zh">每次调整即时预览，满意后按原图或指定尺寸保存到相册，保留 EXIF。</p>
-        <p data-lang="en">See every change instantly, then save at original or a chosen size, with EXIF kept.</p>
-      </div>
-      <div class="feature">
-        <h3 data-lang="zh">本地处理</h3>
-        <h3 data-lang="en">On-device</h3>
-        <p data-lang="zh">照片只在你的手机上处理，不上传、不收集任何个人数据。</p>
-        <p data-lang="en">Photos are processed on your device. Nothing is uploaded and no personal data is collected.</p>
-      </div>
-    </section>
-
-    <div class="links">
-      <a href="/PhotoBorder/support/"><span data-lang="zh">帮助与支持</span><span data-lang="en">Help &amp; Support</span></a>
-      <a href="/PhotoBorder/privacy/"><span data-lang="zh">隐私政策</span><span data-lang="en">Privacy Policy</span></a>
-      <a href="/PhotoBorder/terms/"><span data-lang="zh">Pro 服务条款</span><span data-lang="en">Pro Terms of Service</span></a>
     </div>
-
+    <div data-lang="zh-Hant">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>白邊相框</h1>
+        <p class="tagline">為照片加白邊，印上拍攝參數</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">在 App Store 下載</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>白邊與拍立得</h3>
+          <p>經典白邊框，或換成拍立得風格：相紙顏色、顆粒強度和粗細都能調，還有手寫字體可選。</p>
+        </div>
+        <div class="feature">
+          <h3>拍攝參數</h3>
+          <p>自動讀取 EXIF：品牌、機型、鏡頭、焦距、光圈、快門、ISO、日期，想顯示哪項就開哪項。</p>
+        </div>
+        <div class="feature">
+          <h3>帶著邊框拍照</h3>
+          <p>取景時就能看到加好邊框的成品，參數即時更新；變焦按鍵和系統相機一樣，支援 0.5× 到 8×。</p>
+        </div>
+        <div class="feature">
+          <h3>範本與批次匯出</h3>
+          <p>常用設定存成範本，一鍵套用。Pro 可以用範本批次匯出，一次最多 50 張。</p>
+        </div>
+        <div class="feature">
+          <h3>自由調整，原圖儲存</h3>
+          <p>9 種畫布比例，邊框、內邊框、文字排版和顏色都能調；按原圖或指定尺寸儲存，保留 EXIF。</p>
+        </div>
+        <div class="feature">
+          <h3>本機處理</h3>
+          <p>照片只在你的裝置上處理，不上傳、不收集任何個人資料。</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">說明與支援</a>
+        <a href="/PhotoBorder/privacy/">隱私權政策</a>
+        <a href="/PhotoBorder/terms/">Pro 服務條款</a>
+      </div>
+    </div>
+    <div data-lang="en">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>PhotoBorder</h1>
+        <p class="tagline">White borders with your shot info</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">Download on the App Store</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>White border or Instant</h3>
+          <p>A classic white border, or an instant-film look with adjustable paper color, grain strength and size, plus handwriting fonts.</p>
+        </div>
+        <div class="feature">
+          <h3>Shot info</h3>
+          <p>Reads EXIF automatically: brand, camera, lens, focal length, aperture, shutter, ISO and date. Show only what you want.</p>
+        </div>
+        <div class="feature">
+          <h3>Shoot with the frame</h3>
+          <p>See the finished, framed photo while you compose, with live shot info and zoom buttons from 0.5× to 8×, just like the Camera app.</p>
+        </div>
+        <div class="feature">
+          <h3>Templates and batch export</h3>
+          <p>Save your favorite settings as templates and apply them in one tap. With Pro, batch export up to 50 photos at once.</p>
+        </div>
+        <div class="feature">
+          <h3>Fine-tune, export full-res</h3>
+          <p>9 canvas ratios, adjustable border, inner border, text layout and colors. Save at original or a chosen size, with EXIF kept.</p>
+        </div>
+        <div class="feature">
+          <h3>On-device</h3>
+          <p>Photos are processed on your device. Nothing is uploaded and no personal data is collected.</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">Help &amp; Support</a>
+        <a href="/PhotoBorder/privacy/">Privacy Policy</a>
+        <a href="/PhotoBorder/terms/">Pro Terms of Service</a>
+      </div>
+    </div>
+    <div data-lang="ja">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>フォトボーダー</h1>
+        <p class="tagline">撮影情報入りの白フチ写真に</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">App Store からダウンロード</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>白フチとインスタント</h3>
+          <p>定番の白フチのほか、インスタントフィルム風にも。台紙の色、粒子の強さと大きさを調整でき、手書き風フォントも選べます。</p>
+        </div>
+        <div class="feature">
+          <h3>撮影情報</h3>
+          <p>EXIF を自動で読み取り。メーカー、機種、レンズ、焦点距離、絞り、シャッター、ISO、日付から、表示したい項目だけをオンに。</p>
+        </div>
+        <div class="feature">
+          <h3>フチ付きで撮影</h3>
+          <p>構図を決めながら、フチ付きの仕上がりを確認できます。撮影情報はリアルタイムで更新。ズームボタンは標準カメラと同じく 0.5× から 8× まで。</p>
+        </div>
+        <div class="feature">
+          <h3>テンプレートと一括書き出し</h3>
+          <p>よく使う設定をテンプレートとして保存し、ワンタップで適用。Pro なら一度に最大 50 枚を一括書き出しできます。</p>
+        </div>
+        <div class="feature">
+          <h3>細かく調整、フル解像度で保存</h3>
+          <p>9 種類のキャンバス比率。フチ、内側のフチ、テキストの配置と色を調整し、オリジナルまたは指定サイズで EXIF ごと保存。</p>
+        </div>
+        <div class="feature">
+          <h3>デバイス上で処理</h3>
+          <p>写真はデバイス上だけで処理されます。アップロードも個人データの収集も一切ありません。</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">ヘルプとサポート</a>
+        <a href="/PhotoBorder/privacy/">プライバシーポリシー</a>
+        <a href="/PhotoBorder/terms/">Pro 利用規約</a>
+      </div>
+    </div>
+    <div data-lang="ko">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>포토보더</h1>
+        <p class="tagline">촬영 정보를 담은 흰 테두리 사진</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">App Store에서 다운로드</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>흰 테두리와 인스턴트</h3>
+          <p>클래식한 흰 테두리, 또는 인스턴트 필름 스타일. 인화지 색상과 입자 강도·크기를 조절하고 손글씨 글꼴도 고를 수 있습니다.</p>
+        </div>
+        <div class="feature">
+          <h3>촬영 정보</h3>
+          <p>EXIF를 자동으로 읽어 옵니다. 브랜드, 기종, 렌즈, 초점 거리, 조리개, 셔터, ISO, 날짜 중 원하는 항목만 켜세요.</p>
+        </div>
+        <div class="feature">
+          <h3>테두리를 보며 촬영</h3>
+          <p>구도를 잡는 동안 테두리가 적용된 결과물을 미리 봅니다. 촬영 정보는 실시간으로 갱신되고, 줌 버튼은 기본 카메라처럼 0.5×부터 8×까지 지원합니다.</p>
+        </div>
+        <div class="feature">
+          <h3>템플릿과 일괄 내보내기</h3>
+          <p>자주 쓰는 설정을 템플릿으로 저장해 한 번에 적용하세요. Pro에서는 한 번에 최대 50장까지 일괄 내보낼 수 있습니다.</p>
+        </div>
+        <div class="feature">
+          <h3>세밀한 조정, 원본 해상도 저장</h3>
+          <p>9가지 캔버스 비율, 테두리·안쪽 테두리·텍스트 배치와 색상 조절. 원본 또는 원하는 크기로 EXIF와 함께 저장합니다.</p>
+        </div>
+        <div class="feature">
+          <h3>기기에서 처리</h3>
+          <p>사진은 기기에서만 처리됩니다. 업로드하지 않으며 개인 데이터도 수집하지 않습니다.</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">도움말 및 지원</a>
+        <a href="/PhotoBorder/privacy/">개인정보 처리방침</a>
+        <a href="/PhotoBorder/terms/">Pro 이용약관</a>
+      </div>
+    </div>
+    <div data-lang="fr">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>PhotoBorder</h1>
+        <p class="tagline">Bordure blanche et infos photo</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">Télécharger dans l’App Store</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>Bordure blanche ou Instantané</h3>
+          <p>Une bordure blanche classique, ou un look de film instantané : couleur du papier, intensité et taille du grain réglables, et polices manuscrites.</p>
+        </div>
+        <div class="feature">
+          <h3>Infos de prise de vue</h3>
+          <p>Lecture automatique des EXIF : marque, appareil, objectif, focale, ouverture, vitesse, ISO et date. Affichez seulement ce que vous voulez.</p>
+        </div>
+        <div class="feature">
+          <h3>Photographiez avec le cadre</h3>
+          <p>Voyez la photo encadrée pendant que vous cadrez, avec les infos en direct et des boutons de zoom de 0,5× à 8×, comme dans l’app Appareil photo.</p>
+        </div>
+        <div class="feature">
+          <h3>Modèles et export par lot</h3>
+          <p>Enregistrez vos réglages favoris comme modèles et appliquez-les en un toucher. Avec Pro, exportez jusqu’à 50 photos d’un coup.</p>
+        </div>
+        <div class="feature">
+          <h3>Réglages fins, export en pleine résolution</h3>
+          <p>9 formats de toile, bordure, bordure intérieure, mise en page et couleurs du texte réglables. Enregistrez en taille originale ou choisie, EXIF conservées.</p>
+        </div>
+        <div class="feature">
+          <h3>Sur l’appareil</h3>
+          <p>Vos photos sont traitées sur votre appareil. Rien n’est envoyé et aucune donnée personnelle n’est collectée.</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">Aide et assistance</a>
+        <a href="/PhotoBorder/privacy/">Politique de confidentialité</a>
+        <a href="/PhotoBorder/terms/">Conditions Pro</a>
+      </div>
+    </div>
+    <div data-lang="es">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>PhotoBorder</h1>
+        <p class="tagline">Bordes blancos con datos EXIF</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">Descargar en el App Store</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>Borde blanco o Instantánea</h3>
+          <p>Un borde blanco clásico o un estilo de película instantánea, con color del papel, intensidad y tamaño del grano ajustables y fuentes manuscritas.</p>
+        </div>
+        <div class="feature">
+          <h3>Datos de la toma</h3>
+          <p>Lee el EXIF automáticamente: marca, cámara, objetivo, focal, apertura, velocidad, ISO y fecha. Muestra solo lo que quieras.</p>
+        </div>
+        <div class="feature">
+          <h3>Dispara con el marco</h3>
+          <p>Mira la foto enmarcada mientras encuadras, con los datos en directo y botones de zoom de 0,5× a 8×, como en la app Cámara.</p>
+        </div>
+        <div class="feature">
+          <h3>Plantillas y exportación por lotes</h3>
+          <p>Guarda tus ajustes favoritos como plantillas y aplícalos con un toque. Con Pro, exporta hasta 50 fotos de una vez.</p>
+        </div>
+        <div class="feature">
+          <h3>Ajustes finos, resolución completa</h3>
+          <p>9 proporciones de lienzo; borde, borde interior, disposición y colores del texto ajustables. Guarda en tamaño original o el que elijas, conservando el EXIF.</p>
+        </div>
+        <div class="feature">
+          <h3>En el dispositivo</h3>
+          <p>Las fotos se procesan en tu dispositivo. No se sube nada ni se recopilan datos personales.</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">Ayuda y soporte</a>
+        <a href="/PhotoBorder/privacy/">Política de privacidad</a>
+        <a href="/PhotoBorder/terms/">Condiciones de Pro</a>
+      </div>
+    </div>
+    <div data-lang="de">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>PhotoBorder</h1>
+        <p class="tagline">Weißer Rand mit Aufnahmedaten</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">Im App Store laden</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>Weißer Rahmen oder Sofortbild</h3>
+          <p>Ein klassischer weißer Rahmen oder ein Sofortbild-Look mit einstellbarer Papierfarbe, Körnungsstärke und -größe sowie Handschrift-Schriften.</p>
+        </div>
+        <div class="feature">
+          <h3>Aufnahmedaten</h3>
+          <p>Liest EXIF automatisch: Marke, Kamera, Objektiv, Brennweite, Blende, Belichtungszeit, ISO und Datum. Zeig nur, was du willst.</p>
+        </div>
+        <div class="feature">
+          <h3>Mit Rahmen fotografieren</h3>
+          <p>Sieh das fertig gerahmte Foto schon beim Komponieren, mit Live-Aufnahmedaten und Zoomtasten von 0,5× bis 8× wie in der Kamera-App.</p>
+        </div>
+        <div class="feature">
+          <h3>Vorlagen und Stapelexport</h3>
+          <p>Sichere deine Lieblingseinstellungen als Vorlagen und wende sie mit einem Tippen an. Mit Pro exportierst du bis zu 50 Fotos auf einmal.</p>
+        </div>
+        <div class="feature">
+          <h3>Feinschliff, volle Auflösung</h3>
+          <p>9 Seitenverhältnisse; Rahmen, Innenrahmen, Textlayout und Farben einstellbar. Sichern in Originalgröße oder gewählter Größe, EXIF bleibt erhalten.</p>
+        </div>
+        <div class="feature">
+          <h3>Auf dem Gerät</h3>
+          <p>Fotos werden auf deinem Gerät verarbeitet. Nichts wird hochgeladen, keine personenbezogenen Daten werden erfasst.</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">Hilfe &amp; Support</a>
+        <a href="/PhotoBorder/privacy/">Datenschutzrichtlinie</a>
+        <a href="/PhotoBorder/terms/">Pro-Nutzungsbedingungen</a>
+      </div>
+    </div>
+    <div data-lang="pt-BR">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>PhotoBorder</h1>
+        <p class="tagline">Borda branca com dados da foto</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">Baixar na App Store</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>Borda branca ou Instantânea</h3>
+          <p>Uma borda branca clássica ou um visual de filme instantâneo, com cor do papel, intensidade e tamanho do grão ajustáveis e fontes manuscritas.</p>
+        </div>
+        <div class="feature">
+          <h3>Dados da foto</h3>
+          <p>Lê o EXIF automaticamente: marca, câmera, lente, distância focal, abertura, velocidade, ISO e data. Mostre só o que quiser.</p>
+        </div>
+        <div class="feature">
+          <h3>Fotografe com a moldura</h3>
+          <p>Veja a foto já emoldurada enquanto enquadra, com dados ao vivo e botões de zoom de 0,5× a 8×, como no app Câmera.</p>
+        </div>
+        <div class="feature">
+          <h3>Modelos e exportação em lote</h3>
+          <p>Salve seus ajustes favoritos como modelos e aplique com um toque. Com o Pro, exporte até 50 fotos de uma vez.</p>
+        </div>
+        <div class="feature">
+          <h3>Ajuste fino, resolução total</h3>
+          <p>9 proporções de tela; borda, borda interna, layout e cores do texto ajustáveis. Salve no tamanho original ou no que escolher, mantendo o EXIF.</p>
+        </div>
+        <div class="feature">
+          <h3>No dispositivo</h3>
+          <p>As fotos são processadas no seu dispositivo. Nada é enviado e nenhum dado pessoal é coletado.</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">Ajuda e suporte</a>
+        <a href="/PhotoBorder/privacy/">Política de privacidade</a>
+        <a href="/PhotoBorder/terms/">Termos do Pro</a>
+      </div>
+    </div>
+    <div data-lang="it">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>PhotoBorder</h1>
+        <p class="tagline">Bordo bianco e dati di scatto</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">Scarica su App Store</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>Bordo bianco o Istantanea</h3>
+          <p>Un classico bordo bianco o un look da pellicola istantanea, con colore della carta, intensità e dimensione della grana regolabili e font in stile calligrafico.</p>
+        </div>
+        <div class="feature">
+          <h3>Dati di scatto</h3>
+          <p>Legge gli EXIF in automatico: marca, fotocamera, obiettivo, focale, apertura, tempo, ISO e data. Mostra solo ciò che vuoi.</p>
+        </div>
+        <div class="feature">
+          <h3>Scatta con la cornice</h3>
+          <p>Vedi la foto già incorniciata mentre inquadri, con i dati in tempo reale e pulsanti di zoom da 0,5× a 8×, come nell’app Fotocamera.</p>
+        </div>
+        <div class="feature">
+          <h3>Modelli ed esportazione in blocco</h3>
+          <p>Salva le tue impostazioni preferite come modelli e applicale con un tocco. Con Pro esporti fino a 50 foto alla volta.</p>
+        </div>
+        <div class="feature">
+          <h3>Regolazioni fini, piena risoluzione</h3>
+          <p>9 proporzioni; bordo, bordo interno, layout e colori del testo regolabili. Salva a dimensione originale o scelta, con gli EXIF.</p>
+        </div>
+        <div class="feature">
+          <h3>Sul dispositivo</h3>
+          <p>Le foto vengono elaborate sul tuo dispositivo. Nulla viene caricato e nessun dato personale viene raccolto.</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">Aiuto e supporto</a>
+        <a href="/PhotoBorder/privacy/">Informativa sulla privacy</a>
+        <a href="/PhotoBorder/terms/">Termini di Pro</a>
+      </div>
+    </div>
+    <div data-lang="ru">
+      <section class="hero">
+        <img class="icon" src="/assets/app-icon.png" alt="">
+        <h1>PhotoBorder</h1>
+        <p class="tagline">Белая рамка и данные съёмки</p>
+        <a class="button" href="https://apps.apple.com/app/id6801197127">Загрузить в App Store</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          <h3>Белая рамка или моментальное фото</h3>
+          <p>Классическая белая рамка или стиль моментального фото: цвет бумаги, сила и размер зерна настраиваются, есть рукописные шрифты.</p>
+        </div>
+        <div class="feature">
+          <h3>Данные съёмки</h3>
+          <p>EXIF считывается автоматически: марка, камера, объектив, фокусное расстояние, диафрагма, выдержка, ISO и дата. Показывайте только нужное.</p>
+        </div>
+        <div class="feature">
+          <h3>Съёмка с рамкой</h3>
+          <p>Готовый снимок в рамке виден уже при кадрировании, данные обновляются в реальном времени, а кнопки зума — от 0,5× до 8×, как в приложении «Камера».</p>
+        </div>
+        <div class="feature">
+          <h3>Шаблоны и пакетный экспорт</h3>
+          <p>Сохраняйте любимые настройки как шаблоны и применяйте их одним касанием. С Pro можно экспортировать до 50 фото за раз.</p>
+        </div>
+        <div class="feature">
+          <h3>Тонкая настройка, полное разрешение</h3>
+          <p>9 соотношений сторон; рамка, внутренняя рамка, раскладка и цвет текста настраиваются. Сохранение в исходном или выбранном размере с EXIF.</p>
+        </div>
+        <div class="feature">
+          <h3>На устройстве</h3>
+          <p>Фото обрабатываются на вашем устройстве. Ничего не загружается, личные данные не собираются.</p>
+        </div>
+      </section>
+      <div class="links">
+        <a href="/PhotoBorder/support/">Помощь и поддержка</a>
+        <a href="/PhotoBorder/privacy/">Политика конфиденциальности</a>
+        <a href="/PhotoBorder/terms/">Условия Pro</a>
+      </div>
+    </div>
     <footer class="site">© 2026 NiceRhythm</footer>
   </div>
 </body>

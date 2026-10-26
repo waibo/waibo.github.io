@@ -1,25 +1,35 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-ui="zh-Hans">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>隐私政策 Privacy Policy - 白边相框 PhotoBorder</title>
-  <meta name="title-zh" content="隐私政策 - 白边相框">
+  <title>隐私政策 - 白边相框</title>
+  <meta name="title-zh-Hans" content="隐私政策 - 白边相框">
+  <meta name="title-zh-Hant" content="隱私權政策 - 白邊相框">
   <meta name="title-en" content="Privacy Policy - PhotoBorder">
+  <meta name="title-ja" content="プライバシーポリシー - フォトボーダー">
+  <meta name="title-ko" content="개인정보 처리방침 - 포토보더">
+  <meta name="title-fr" content="Politique de confidentialité - PhotoBorder">
+  <meta name="title-es" content="Política de privacidad - PhotoBorder">
+  <meta name="title-de" content="Datenschutzrichtlinie - PhotoBorder">
+  <meta name="title-pt-BR" content="Política de privacidade - PhotoBorder">
+  <meta name="title-it" content="Informativa sulla privacy - PhotoBorder">
+  <meta name="title-ru" content="Политика конфиденциальности - PhotoBorder">
+  <meta name="description" content="Add a white border to your photos and print the aperture, shutter speed and ISO underneath.">
   <link rel="icon" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/app-icon.png">
   <link rel="stylesheet" href="/assets/style.css">
   <script src="/assets/lang.js"></script>
 </head>
 <body>
   <div class="wrap">
     <header class="site">
-      <a class="brand" href="/PhotoBorder/"><span data-lang="zh">白边相框</span><span data-lang="en">PhotoBorder</span></a>
-      <div class="lang-switch"><button data-set="zh">中文</button><button data-set="en">EN</button></div>
+      <a class="brand" href="/PhotoBorder/"><span data-lang="zh-Hans">白边相框</span><span data-lang="zh-Hant">白邊相框</span><span data-lang="en">PhotoBorder</span><span data-lang="ja">フォトボーダー</span><span data-lang="ko">포토보더</span><span data-lang="fr">PhotoBorder</span><span data-lang="es">PhotoBorder</span><span data-lang="de">PhotoBorder</span><span data-lang="pt-BR">PhotoBorder</span><span data-lang="it">PhotoBorder</span><span data-lang="ru">PhotoBorder</span></a>
+      <select class="lang-select" aria-label="Language"><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="fr">Français</option><option value="es">Español</option><option value="de">Deutsch</option><option value="pt-BR">Português (Brasil)</option><option value="it">Italiano</option><option value="ru">Русский</option></select>
     </header>
-
-    <article class="card" data-lang="zh">
+    <article class="card" data-lang="zh-Hans">
       <h1>隐私政策</h1>
-      <p class="meta">生效日期：2026 年 10 月 20 日</p>
+      <p class="meta">生效日期：2026 年 10 月 26 日</p>
       <p>本政策说明“白边相框”（以下简称“本 App”）如何处理你的信息。简单来说：<strong>本 App 不收集、不上传、不分享任何个人数据。</strong></p>
 
       <h2>1. 我们不收集个人数据</h2>
@@ -31,43 +41,101 @@
 
       <h2>2. 照片</h2>
       <ul>
-        <li>选择照片使用的是 iOS 系统照片选择器，本 App 只能访问你选中的那一张照片，无法浏览你的相册。</li>
+        <li>选择照片使用的是 iOS 系统照片选择器，本 App 只能访问你选中的照片，无法浏览你的相册。</li>
         <li>读取拍摄参数（EXIF）、添加边框、生成预览和导出图片，全部在你的设备本地完成，照片不会被上传。</li>
         <li>保存图片时，本 App 只申请“添加照片”权限，用于把生成的图片写入你的相册。</li>
       </ul>
 
-      <h2>3. 拍摄参数与位置信息</h2>
+      <h2>3. 相机</h2>
+      <ul>
+        <li>使用拍照功能时，本 App 会请求相机权限。取景画面只用于在屏幕上实时预览边框效果，不会被录制或上传。</li>
+        <li>拍下的照片在本地加上边框，由你决定是否保存到相册。</li>
+      </ul>
+
+      <h2>4. 拍摄参数与位置信息</h2>
       <ul>
         <li>本 App 会读取照片中的 EXIF 信息（如相机型号、镜头、光圈、快门、ISO、拍摄时间、拍摄位置），仅用于在边框上显示。</li>
-        <li>“位置”默认关闭。只有你主动开启时，位置才会显示在边框上，导出的图片也才会保留 GPS 信息。</li>
+        <li>“拍摄位置”默认关闭。只有你主动开启时，位置才会显示在边框上，导出的图片也才会保留 GPS 信息。</li>
         <li>本 App 不会获取你设备的实时定位。</li>
       </ul>
 
-      <h2>4. 购买</h2>
+      <h2>5. 购买</h2>
       <ul>
         <li>Pro 订阅和买断通过 Apple 的 App 内购买完成，付款由 Apple 处理，我们无法获取你的支付信息或 Apple ID。</li>
         <li>本 App 通过 Apple 的 StoreKit 在设备上校验购买状态。</li>
       </ul>
 
-      <h2>5. 存储在设备上的数据</h2>
-      <p>本 App 仅在你的设备上保存每日免费导出次数。这些数据不会离开你的设备，删除本 App 后即被清除。</p>
+      <h2>6. 存储在设备上的数据</h2>
+      <p>本 App 只在你的设备上保存每日免费导出次数、你上次选择的参数项，以及你保存的模板（模板不包含位置信息）。这些数据不会离开你的设备，删除本 App 后即被清除。</p>
 
-      <h2>6. 网络使用</h2>
-      <p>本 App 只在加载内购商品、购买或恢复购买时，通过 Apple 的服务联网。编辑和保存照片不需要网络。</p>
+      <h2>7. 网络使用</h2>
+      <p>本 App 只在加载内购商品、购买或恢复购买时，通过 Apple 的服务联网。编辑、拍照和保存照片不需要网络。</p>
 
-      <h2>7. 儿童隐私</h2>
+      <h2>8. 儿童隐私</h2>
       <p>本 App 不收集任何人的个人信息，包括 13 岁以下的儿童。</p>
 
-      <h2>8. 政策变更</h2>
+      <h2>9. 政策变更</h2>
       <p>如本政策有更新，我们会在本页面发布新版本并更新生效日期。</p>
 
-      <h2>9. 联系我们</h2>
+      <h2>10. 联系我们</h2>
       <p>如有任何问题，请发送邮件至 <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>。</p>
     </article>
+    <article class="card" data-lang="zh-Hant">
+      <h1>隱私權政策</h1>
+      <p class="meta">生效日期：2026 年 10 月 26 日</p>
+      <p>本政策說明「白邊相框」（以下簡稱「本 App」）如何處理你的資訊。簡單來說：<strong>本 App 不收集、不上傳、不分享任何個人資料。</strong></p>
 
+      <h2>1. 我們不收集個人資料</h2>
+      <ul>
+        <li>本 App 沒有帳號系統，不需要註冊或登入。</li>
+        <li>本 App 不包含任何統計分析、廣告或第三方追蹤 SDK。</li>
+        <li>本 App 沒有自己的伺服器，不會把任何資料傳送給開發者。</li>
+      </ul>
+
+      <h2>2. 照片</h2>
+      <ul>
+        <li>選擇照片使用的是 iOS 系統照片選擇器，本 App 只能存取你選取的照片，無法瀏覽你的相簿。</li>
+        <li>讀取拍攝參數（EXIF）、加上邊框、產生預覽和匯出圖片，全部在你的裝置本機完成，照片不會被上傳。</li>
+        <li>儲存圖片時，本 App 只要求「僅限加入照片」權限，用於把產生的圖片寫入你的相簿。</li>
+      </ul>
+
+      <h2>3. 相機</h2>
+      <ul>
+        <li>使用拍照功能時，本 App 會要求相機權限。取景畫面只用於在螢幕上即時預覽邊框效果，不會被錄製或上傳。</li>
+        <li>拍下的照片在本機加上邊框，由你決定是否儲存到相簿。</li>
+      </ul>
+
+      <h2>4. 拍攝參數與位置資訊</h2>
+      <ul>
+        <li>本 App 會讀取照片中的 EXIF 資訊（如相機型號、鏡頭、光圈、快門、ISO、拍攝時間、拍攝位置），僅用於在邊框上顯示。</li>
+        <li>「拍攝位置」預設關閉。只有你主動開啟時，位置才會顯示在邊框上，匯出的圖片也才會保留 GPS 資訊。</li>
+        <li>本 App 不會取得你裝置的即時定位。</li>
+      </ul>
+
+      <h2>5. 購買</h2>
+      <ul>
+        <li>Pro 訂閱和買斷透過 Apple 的 App 內購買完成，付款由 Apple 處理，我們無法取得你的付款資訊或 Apple ID。</li>
+        <li>本 App 透過 Apple 的 StoreKit 在裝置上驗證購買狀態。</li>
+      </ul>
+
+      <h2>6. 儲存在裝置上的資料</h2>
+      <p>本 App 只在你的裝置上儲存每日免費匯出次數、你上次選擇的參數項目，以及你儲存的範本（範本不包含位置資訊）。這些資料不會離開你的裝置，刪除本 App 後即被清除。</p>
+
+      <h2>7. 網路使用</h2>
+      <p>本 App 只在載入 App 內購買項目、購買或回復購買時，透過 Apple 的服務連網。編輯、拍照和儲存照片不需要網路。</p>
+
+      <h2>8. 兒童隱私</h2>
+      <p>本 App 不收集任何人的個人資訊，包括 13 歲以下的兒童。</p>
+
+      <h2>9. 政策變更</h2>
+      <p>如本政策有更新，我們會在本頁面發布新版本並更新生效日期。</p>
+
+      <h2>10. 聯絡我們</h2>
+      <p>如有任何問題，請寄信至 <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>。</p>
+    </article>
     <article class="card" data-lang="en">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective date: October 20, 2026</p>
+      <p class="meta">Effective date: October 26, 2026</p>
       <p>This policy explains how PhotoBorder (“the App”) handles your information. In short: <strong>the App does not collect, upload or share any personal data.</strong></p>
 
       <h2>1. We don’t collect personal data</h2>
@@ -79,40 +147,469 @@
 
       <h2>2. Photos</h2>
       <ul>
-        <li>Photos are chosen with the iOS system photo picker. The App can only access the photo you pick and cannot browse your library.</li>
+        <li>Photos are chosen with the iOS system photo picker. The App can only access the photos you pick and cannot browse your library.</li>
         <li>Reading shooting info (EXIF), adding borders, previewing and exporting all happen on your device. Your photos are never uploaded.</li>
         <li>When saving, the App only asks for “Add Photos Only” access so it can write the finished image to your library.</li>
       </ul>
 
-      <h2>3. Shooting info and location</h2>
+      <h2>3. Camera</h2>
+      <ul>
+        <li>When you use the camera, the App asks for camera access. The live view is only used to preview the border on screen; it is never recorded or uploaded.</li>
+        <li>Photos you take are framed on your device, and you decide whether to save them to your library.</li>
+      </ul>
+
+      <h2>4. Shooting info and location</h2>
       <ul>
         <li>The App reads EXIF data in your photo (such as camera model, lens, aperture, shutter speed, ISO, date and location) only to display it on the border.</li>
         <li>Location is off by default. It is shown on the border, and GPS data is kept in the exported image, only if you turn it on.</li>
         <li>The App never accesses your device’s current location.</li>
       </ul>
 
-      <h2>4. Purchases</h2>
+      <h2>5. Purchases</h2>
       <ul>
         <li>Pro subscriptions and the lifetime purchase use Apple’s In-App Purchase. Payments are handled by Apple; we never see your payment details or Apple ID.</li>
         <li>The App verifies your purchase status on your device using Apple’s StoreKit.</li>
       </ul>
 
-      <h2>5. Data stored on your device</h2>
-      <p>The App only stores your daily free export count on your device. It never leaves your device and is deleted when you delete the App.</p>
+      <h2>6. Data stored on your device</h2>
+      <p>The App only stores your daily free export count, the shot info items you last chose, and the templates you save (templates never include location). This data never leaves your device and is deleted when you delete the App.</p>
 
-      <h2>6. Network use</h2>
-      <p>The App connects to the internet only through Apple’s services, to load in-app purchase products and to purchase or restore. Editing and saving photos works offline.</p>
+      <h2>7. Network use</h2>
+      <p>The App connects to the internet only through Apple’s services, to load in-app purchase products and to purchase or restore. Editing, shooting and saving photos work offline.</p>
 
-      <h2>7. Children’s privacy</h2>
+      <h2>8. Children’s privacy</h2>
       <p>The App does not collect personal information from anyone, including children under 13.</p>
 
-      <h2>8. Changes</h2>
+      <h2>9. Changes</h2>
       <p>If this policy changes, we will post the new version on this page and update the effective date.</p>
 
-      <h2>9. Contact</h2>
+      <h2>10. Contact</h2>
       <p>Questions? Email <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
     </article>
+    <article class="card" data-lang="ja">
+      <h1>プライバシーポリシー</h1>
+      <p class="meta">施行日：2026 年 10 月 26 日</p>
+      <p>このポリシーは、フォトボーダー（以下「本アプリ」）がお客様の情報をどのように扱うかを説明するものです。要約すると、<strong>本アプリは個人データを収集、アップロード、共有しません。</strong></p>
 
+      <h2>1. 個人データを収集しません</h2>
+      <ul>
+        <li>本アプリにはアカウントがなく、登録やサインインは不要です。</li>
+        <li>本アプリには、解析、広告、第三者のトラッキング SDK は含まれていません。</li>
+        <li>本アプリには独自のサーバーがなく、開発者にデータを送信することはありません。</li>
+      </ul>
+
+      <h2>2. 写真</h2>
+      <ul>
+        <li>写真の選択には iOS の標準フォトピッカーを使用します。本アプリがアクセスできるのは選択した写真だけで、ライブラリを閲覧することはできません。</li>
+        <li>撮影情報（EXIF）の読み取り、フチの追加、プレビューと書き出しはすべてデバイス上で行われ、写真がアップロードされることはありません。</li>
+        <li>保存時には、完成した画像をライブラリに書き込むため「写真の追加のみ」へのアクセスだけを求めます。</li>
+      </ul>
+
+      <h2>3. カメラ</h2>
+      <ul>
+        <li>カメラを使うとき、本アプリはカメラへのアクセスを求めます。ライブビューは画面上でフチをプレビューするためだけに使われ、録画やアップロードはされません。</li>
+        <li>撮影した写真はデバイス上でフチが付けられ、ライブラリに保存するかどうかはお客様が決めます。</li>
+      </ul>
+
+      <h2>4. 撮影情報と位置情報</h2>
+      <ul>
+        <li>本アプリは、写真の EXIF データ（カメラの機種、レンズ、絞り、シャッタースピード、ISO、日時、撮影場所など）を、フチに表示するためだけに読み取ります。</li>
+        <li>「撮影場所」は初期設定でオフです。オンにした場合に限り、位置情報がフチに表示され、書き出した画像に GPS データが残ります。</li>
+        <li>本アプリがデバイスの現在地にアクセスすることはありません。</li>
+      </ul>
+
+      <h2>5. 購入</h2>
+      <ul>
+        <li>Pro のサブスクリプションと買い切りは Apple の App 内課金を利用します。支払いは Apple が処理し、当方がお支払い情報や Apple ID を知ることはありません。</li>
+        <li>本アプリは Apple の StoreKit を使い、デバイス上で購入状況を確認します。</li>
+      </ul>
+
+      <h2>6. デバイスに保存されるデータ</h2>
+      <p>本アプリがデバイスに保存するのは、1 日の無料書き出し回数、最後に選んだ撮影情報の項目、保存したテンプレート（位置情報は含みません）だけです。これらのデータがデバイスの外に出ることはなく、本アプリを削除すると消去されます。</p>
+
+      <h2>7. ネットワークの利用</h2>
+      <p>本アプリがインターネットに接続するのは、App 内課金の商品を読み込むときと、購入または復元するときに Apple のサービスを通じてだけです。編集、撮影、写真の保存はオフラインで使えます。</p>
+
+      <h2>8. 子どものプライバシー</h2>
+      <p>本アプリは、13 歳未満の子どもを含め、誰の個人情報も収集しません。</p>
+
+      <h2>9. 変更</h2>
+      <p>このポリシーを変更する場合は、このページに新しい版を掲載し、施行日を更新します。</p>
+
+      <h2>10. お問い合わせ</h2>
+      <p>ご質問は <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a> までメールでお寄せください。</p>
+    </article>
+    <article class="card" data-lang="ko">
+      <h1>개인정보 처리방침</h1>
+      <p class="meta">시행일: 2026년 10월 26일</p>
+      <p>이 방침은 포토보더(이하 ‘앱’)가 사용자의 정보를 어떻게 처리하는지 설명합니다. 요약하면 <strong>앱은 어떠한 개인 데이터도 수집, 업로드, 공유하지 않습니다.</strong></p>
+
+      <h2>1. 개인 데이터를 수집하지 않습니다</h2>
+      <ul>
+        <li>앱에는 계정이 없으며, 가입하거나 로그인할 필요가 없습니다.</li>
+        <li>앱에는 분석, 광고 또는 제3자 추적 SDK가 포함되어 있지 않습니다.</li>
+        <li>앱에는 자체 서버가 없으며, 개발자에게 어떠한 데이터도 보내지 않습니다.</li>
+      </ul>
+
+      <h2>2. 사진</h2>
+      <ul>
+        <li>사진은 iOS 기본 사진 선택기로 고릅니다. 앱은 사용자가 선택한 사진에만 접근할 수 있으며 보관함을 둘러볼 수 없습니다.</li>
+        <li>촬영 정보(EXIF) 읽기, 테두리 추가, 미리 보기와 내보내기는 모두 기기에서 이루어지며 사진은 업로드되지 않습니다.</li>
+        <li>저장할 때 앱은 완성된 이미지를 보관함에 쓰기 위해 ‘사진 추가만 허용’ 권한만 요청합니다.</li>
+      </ul>
+
+      <h2>3. 카메라</h2>
+      <ul>
+        <li>카메라를 사용할 때 앱은 카메라 접근 권한을 요청합니다. 실시간 화면은 테두리를 화면에서 미리 보는 데에만 쓰이며, 녹화되거나 업로드되지 않습니다.</li>
+        <li>촬영한 사진은 기기에서 테두리가 적용되며, 보관함에 저장할지는 사용자가 결정합니다.</li>
+      </ul>
+
+      <h2>4. 촬영 정보와 위치</h2>
+      <ul>
+        <li>앱은 사진의 EXIF 데이터(카메라 기종, 렌즈, 조리개, 셔터 속도, ISO, 날짜, 위치 등)를 테두리에 표시하기 위해서만 읽습니다.</li>
+        <li>‘촬영 위치’는 기본적으로 꺼져 있습니다. 직접 켠 경우에만 위치가 테두리에 표시되고, 내보낸 이미지에 GPS 데이터가 남습니다.</li>
+        <li>앱은 기기의 현재 위치에 접근하지 않습니다.</li>
+      </ul>
+
+      <h2>5. 구입</h2>
+      <ul>
+        <li>Pro 구독과 평생 이용권은 Apple의 앱 내 구입을 사용합니다. 결제는 Apple이 처리하며, 저희는 결제 정보나 Apple ID를 알 수 없습니다.</li>
+        <li>앱은 Apple의 StoreKit으로 기기에서 구입 상태를 확인합니다.</li>
+      </ul>
+
+      <h2>6. 기기에 저장되는 데이터</h2>
+      <p>앱은 하루 무료 내보내기 횟수, 마지막으로 선택한 촬영 정보 항목, 저장한 템플릿(위치 정보는 포함하지 않음)만 기기에 저장합니다. 이 데이터는 기기 밖으로 나가지 않으며, 앱을 삭제하면 함께 지워집니다.</p>
+
+      <h2>7. 네트워크 사용</h2>
+      <p>앱은 앱 내 구입 상품을 불러오거나 구입·복원할 때에만 Apple의 서비스를 통해 인터넷에 연결합니다. 편집, 촬영, 사진 저장은 오프라인에서도 됩니다.</p>
+
+      <h2>8. 아동의 개인정보</h2>
+      <p>앱은 13세 미만 아동을 포함해 누구의 개인정보도 수집하지 않습니다.</p>
+
+      <h2>9. 변경</h2>
+      <p>이 방침이 변경되면 새 버전을 이 페이지에 게시하고 시행일을 업데이트합니다.</p>
+
+      <h2>10. 문의</h2>
+      <p>문의 사항은 <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>(으)로 이메일을 보내 주세요.</p>
+    </article>
+    <article class="card" data-lang="fr">
+      <h1>Politique de confidentialité</h1>
+      <p class="meta">Date d’entrée en vigueur : 26 octobre 2026</p>
+      <p>Cette politique explique comment PhotoBorder (« l’app ») traite vos informations. En bref : <strong>l’app ne collecte, n’envoie et ne partage aucune donnée personnelle.</strong></p>
+
+      <h2>1. Nous ne collectons aucune donnée personnelle</h2>
+      <ul>
+        <li>L’app n’a pas de compte : aucune inscription ni connexion n’est nécessaire.</li>
+        <li>L’app ne contient aucun SDK d’analyse, de publicité ou de suivi tiers.</li>
+        <li>L’app n’a pas de serveur et n’envoie aucune donnée au développeur.</li>
+      </ul>
+
+      <h2>2. Photos</h2>
+      <ul>
+        <li>Les photos sont choisies avec le sélecteur de photos d’iOS. L’app n’accède qu’aux photos que vous choisissez et ne peut pas parcourir votre photothèque.</li>
+        <li>La lecture des infos de prise de vue (EXIF), l’ajout de la bordure, l’aperçu et l’export se font sur votre appareil. Vos photos ne sont jamais envoyées.</li>
+        <li>Pour enregistrer, l’app demande uniquement l’accès « Ajouter des photos uniquement » afin d’écrire l’image finale dans votre photothèque.</li>
+      </ul>
+
+      <h2>3. Appareil photo</h2>
+      <ul>
+        <li>Quand vous utilisez l’appareil photo, l’app demande l’accès à la caméra. L’image en direct sert uniquement à prévisualiser la bordure à l’écran ; elle n’est jamais enregistrée ni envoyée.</li>
+        <li>Les photos que vous prenez sont encadrées sur votre appareil, et vous décidez si vous les enregistrez dans votre photothèque.</li>
+      </ul>
+
+      <h2>4. Infos de prise de vue et localisation</h2>
+      <ul>
+        <li>L’app lit les données EXIF de votre photo (modèle d’appareil, objectif, ouverture, vitesse, ISO, date, lieu…) uniquement pour les afficher sur la bordure.</li>
+        <li>Le lieu est désactivé par défaut. Il n’apparaît sur la bordure, et les données GPS ne sont conservées dans l’image exportée, que si vous l’activez.</li>
+        <li>L’app n’accède jamais à la position actuelle de votre appareil.</li>
+      </ul>
+
+      <h2>5. Achats</h2>
+      <ul>
+        <li>Les abonnements Pro et l’achat à vie passent par les achats intégrés d’Apple. Les paiements sont traités par Apple ; nous ne voyons jamais vos données de paiement ni votre identifiant Apple.</li>
+        <li>L’app vérifie votre statut d’achat sur votre appareil avec StoreKit d’Apple.</li>
+      </ul>
+
+      <h2>6. Données stockées sur votre appareil</h2>
+      <p>L’app stocke uniquement votre nombre d’exports gratuits du jour, les infos de prise de vue choisies la dernière fois et les modèles que vous enregistrez (les modèles n’incluent jamais le lieu). Ces données ne quittent jamais votre appareil et sont supprimées avec l’app.</p>
+
+      <h2>7. Utilisation du réseau</h2>
+      <p>L’app ne se connecte à Internet que via les services d’Apple, pour charger les achats intégrés et pour acheter ou restaurer. Retoucher, photographier et enregistrer fonctionnent hors ligne.</p>
+
+      <h2>8. Confidentialité des enfants</h2>
+      <p>L’app ne collecte d’informations personnelles auprès de personne, y compris les enfants de moins de 13 ans.</p>
+
+      <h2>9. Modifications</h2>
+      <p>Si cette politique change, nous publierons la nouvelle version sur cette page et mettrons à jour la date d’entrée en vigueur.</p>
+
+      <h2>10. Contact</h2>
+      <p>Une question ? Écrivez à <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
+    <article class="card" data-lang="es">
+      <h1>Política de privacidad</h1>
+      <p class="meta">Fecha de entrada en vigor: 26 de octubre de 2026</p>
+      <p>Esta política explica cómo PhotoBorder («la app») trata tu información. En resumen: <strong>la app no recopila, sube ni comparte ningún dato personal.</strong></p>
+
+      <h2>1. No recopilamos datos personales</h2>
+      <ul>
+        <li>La app no tiene cuentas; nunca necesitas registrarte ni iniciar sesión.</li>
+        <li>La app no contiene SDK de analítica, publicidad ni seguimiento de terceros.</li>
+        <li>La app no tiene servidor propio y no envía ningún dato al desarrollador.</li>
+      </ul>
+
+      <h2>2. Fotos</h2>
+      <ul>
+        <li>Las fotos se eligen con el selector de fotos de iOS. La app solo puede acceder a las fotos que eliges y no puede explorar tu fototeca.</li>
+        <li>La lectura de los datos de la toma (EXIF), el borde, la vista previa y la exportación se hacen en tu dispositivo. Tus fotos nunca se suben.</li>
+        <li>Al guardar, la app solo pide el acceso «Solo añadir fotos» para escribir la imagen terminada en tu fototeca.</li>
+      </ul>
+
+      <h2>3. Cámara</h2>
+      <ul>
+        <li>Cuando usas la cámara, la app pide acceso a ella. La imagen en directo solo se usa para previsualizar el borde en pantalla; nunca se graba ni se sube.</li>
+        <li>Las fotos que tomas se enmarcan en tu dispositivo y tú decides si guardarlas en tu fototeca.</li>
+      </ul>
+
+      <h2>4. Datos de la toma y ubicación</h2>
+      <ul>
+        <li>La app lee los datos EXIF de tu foto (modelo de cámara, objetivo, apertura, velocidad, ISO, fecha, ubicación…) solo para mostrarlos en el borde.</li>
+        <li>La ubicación está desactivada por defecto. Solo aparece en el borde, y los datos GPS se conservan en la imagen exportada, si la activas.</li>
+        <li>La app nunca accede a la ubicación actual de tu dispositivo.</li>
+      </ul>
+
+      <h2>5. Compras</h2>
+      <ul>
+        <li>Las suscripciones Pro y la compra de por vida usan las compras dentro de la app de Apple. Apple gestiona los pagos; nunca vemos tus datos de pago ni tu Apple ID.</li>
+        <li>La app verifica el estado de tu compra en el dispositivo con StoreKit de Apple.</li>
+      </ul>
+
+      <h2>6. Datos guardados en tu dispositivo</h2>
+      <p>La app solo guarda tu número de exportaciones gratuitas del día, los datos de la toma que elegiste la última vez y las plantillas que guardas (las plantillas nunca incluyen la ubicación). Estos datos nunca salen de tu dispositivo y se borran al eliminar la app.</p>
+
+      <h2>7. Uso de la red</h2>
+      <p>La app solo se conecta a internet a través de los servicios de Apple, para cargar las compras dentro de la app y para comprar o restaurar. Editar, fotografiar y guardar funcionan sin conexión.</p>
+
+      <h2>8. Privacidad de los menores</h2>
+      <p>La app no recopila información personal de nadie, incluidos los menores de 13 años.</p>
+
+      <h2>9. Cambios</h2>
+      <p>Si esta política cambia, publicaremos la nueva versión en esta página y actualizaremos la fecha de entrada en vigor.</p>
+
+      <h2>10. Contacto</h2>
+      <p>¿Tienes alguna pregunta? Escribe a <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
+    <article class="card" data-lang="de">
+      <h1>Datenschutzrichtlinie</h1>
+      <p class="meta">Gültig ab: 26. Oktober 2026</p>
+      <p>Diese Richtlinie erklärt, wie PhotoBorder („die App“) mit deinen Informationen umgeht. Kurz gesagt: <strong>Die App erfasst, überträgt und teilt keine personenbezogenen Daten.</strong></p>
+
+      <h2>1. Wir erfassen keine personenbezogenen Daten</h2>
+      <ul>
+        <li>Die App hat keine Accounts; du musst dich nie registrieren oder anmelden.</li>
+        <li>Die App enthält keine Analyse-, Werbe- oder Tracking-SDKs von Drittanbietern.</li>
+        <li>Die App hat keinen eigenen Server und sendet keine Daten an den Entwickler.</li>
+      </ul>
+
+      <h2>2. Fotos</h2>
+      <ul>
+        <li>Fotos werden mit der Fotoauswahl von iOS gewählt. Die App kann nur auf die ausgewählten Fotos zugreifen und deine Mediathek nicht durchsuchen.</li>
+        <li>Das Lesen der Aufnahmedaten (EXIF), der Rahmen, die Vorschau und der Export finden auf deinem Gerät statt. Deine Fotos werden nie hochgeladen.</li>
+        <li>Beim Sichern fragt die App nur nach dem Zugriff „Nur Fotos hinzufügen“, um das fertige Bild in deiner Mediathek zu speichern.</li>
+      </ul>
+
+      <h2>3. Kamera</h2>
+      <ul>
+        <li>Wenn du die Kamera nutzt, fragt die App nach Kamerazugriff. Das Livebild dient nur dazu, den Rahmen auf dem Bildschirm in der Vorschau zu zeigen; es wird nie aufgezeichnet oder hochgeladen.</li>
+        <li>Aufgenommene Fotos werden auf deinem Gerät gerahmt, und du entscheidest, ob du sie in deiner Mediathek sicherst.</li>
+      </ul>
+
+      <h2>4. Aufnahmedaten und Ort</h2>
+      <ul>
+        <li>Die App liest die EXIF-Daten deines Fotos (z. B. Kameramodell, Objektiv, Blende, Belichtungszeit, ISO, Datum und Ort) nur, um sie auf dem Rahmen anzuzeigen.</li>
+        <li>Der Ort ist standardmäßig ausgeschaltet. Nur wenn du ihn einschaltest, erscheint er auf dem Rahmen und bleiben GPS-Daten im exportierten Bild erhalten.</li>
+        <li>Die App greift nie auf den aktuellen Standort deines Geräts zu.</li>
+      </ul>
+
+      <h2>5. Käufe</h2>
+      <ul>
+        <li>Pro-Abos und der Lifetime-Kauf nutzen Apples In-App-Käufe. Zahlungen werden von Apple abgewickelt; wir sehen weder deine Zahlungsdaten noch deine Apple-ID.</li>
+        <li>Die App prüft deinen Kaufstatus auf dem Gerät mit Apples StoreKit.</li>
+      </ul>
+
+      <h2>6. Auf deinem Gerät gespeicherte Daten</h2>
+      <p>Die App speichert nur die Anzahl deiner heutigen kostenlosen Exporte, die zuletzt gewählten Aufnahmedaten und die Vorlagen, die du sicherst (Vorlagen enthalten nie den Ort). Diese Daten verlassen dein Gerät nie und werden mit der App gelöscht.</p>
+
+      <h2>7. Netzwerknutzung</h2>
+      <p>Die App verbindet sich nur über Apples Dienste mit dem Internet, um In-App-Käufe zu laden und zu kaufen oder wiederherzustellen. Bearbeiten, Fotografieren und Sichern funktionieren offline.</p>
+
+      <h2>8. Datenschutz für Kinder</h2>
+      <p>Die App erfasst von niemandem personenbezogene Informationen, auch nicht von Kindern unter 13 Jahren.</p>
+
+      <h2>9. Änderungen</h2>
+      <p>Wenn sich diese Richtlinie ändert, veröffentlichen wir die neue Version auf dieser Seite und aktualisieren das Datum.</p>
+
+      <h2>10. Kontakt</h2>
+      <p>Fragen? Schreib an <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
+    <article class="card" data-lang="pt-BR">
+      <h1>Política de privacidade</h1>
+      <p class="meta">Vigente a partir de: 26 de outubro de 2026</p>
+      <p>Esta política explica como o PhotoBorder (“o app”) trata suas informações. Em resumo: <strong>o app não coleta, envia nem compartilha nenhum dado pessoal.</strong></p>
+
+      <h2>1. Não coletamos dados pessoais</h2>
+      <ul>
+        <li>O app não tem contas; você nunca precisa se cadastrar nem entrar.</li>
+        <li>O app não contém SDKs de análise, publicidade ou rastreamento de terceiros.</li>
+        <li>O app não tem servidor próprio e não envia nenhum dado ao desenvolvedor.</li>
+      </ul>
+
+      <h2>2. Fotos</h2>
+      <ul>
+        <li>As fotos são escolhidas com o seletor de fotos do iOS. O app só acessa as fotos que você escolhe e não consegue navegar pela sua fototeca.</li>
+        <li>A leitura dos dados da foto (EXIF), a borda, a pré-visualização e a exportação acontecem no seu dispositivo. Suas fotos nunca são enviadas.</li>
+        <li>Ao salvar, o app pede apenas o acesso “Somente Adicionar Fotos” para gravar a imagem final na sua fototeca.</li>
+      </ul>
+
+      <h2>3. Câmera</h2>
+      <ul>
+        <li>Ao usar a câmera, o app pede acesso a ela. A imagem ao vivo serve apenas para pré-visualizar a borda na tela; ela nunca é gravada nem enviada.</li>
+        <li>As fotos que você tira recebem a borda no dispositivo, e você decide se quer salvá-las na fototeca.</li>
+      </ul>
+
+      <h2>4. Dados da foto e localização</h2>
+      <ul>
+        <li>O app lê os dados EXIF da sua foto (como modelo da câmera, lente, abertura, velocidade, ISO, data e local) apenas para exibi-los na borda.</li>
+        <li>O local vem desativado. Ele só aparece na borda, e os dados de GPS só ficam na imagem exportada, se você ativá-lo.</li>
+        <li>O app nunca acessa a localização atual do seu dispositivo.</li>
+      </ul>
+
+      <h2>5. Compras</h2>
+      <ul>
+        <li>As assinaturas Pro e a compra vitalícia usam as Compras no App da Apple. Os pagamentos são processados pela Apple; nunca vemos seus dados de pagamento nem seu ID Apple.</li>
+        <li>O app verifica o status da compra no dispositivo com o StoreKit da Apple.</li>
+      </ul>
+
+      <h2>6. Dados armazenados no dispositivo</h2>
+      <p>O app armazena apenas o número de exportações gratuitas do dia, os dados da foto que você escolheu por último e os modelos que você salva (os modelos nunca incluem o local). Esses dados nunca saem do seu dispositivo e são apagados quando você apaga o app.</p>
+
+      <h2>7. Uso da rede</h2>
+      <p>O app só se conecta à internet pelos serviços da Apple, para carregar as compras no app e para comprar ou restaurar. Editar, fotografar e salvar funcionam offline.</p>
+
+      <h2>8. Privacidade de crianças</h2>
+      <p>O app não coleta informações pessoais de ninguém, incluindo crianças com menos de 13 anos.</p>
+
+      <h2>9. Alterações</h2>
+      <p>Se esta política mudar, publicaremos a nova versão nesta página e atualizaremos a data de vigência.</p>
+
+      <h2>10. Contato</h2>
+      <p>Dúvidas? Envie um e-mail para <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
+    <article class="card" data-lang="it">
+      <h1>Informativa sulla privacy</h1>
+      <p class="meta">In vigore dal: 26 ottobre 2026</p>
+      <p>Questa informativa spiega come PhotoBorder (“l’app”) tratta le tue informazioni. In breve: <strong>l’app non raccoglie, carica né condivide alcun dato personale.</strong></p>
+
+      <h2>1. Non raccogliamo dati personali</h2>
+      <ul>
+        <li>L’app non ha account: non devi mai registrarti né accedere.</li>
+        <li>L’app non contiene SDK di analisi, pubblicità o tracciamento di terze parti.</li>
+        <li>L’app non ha un proprio server e non invia alcun dato allo sviluppatore.</li>
+      </ul>
+
+      <h2>2. Foto</h2>
+      <ul>
+        <li>Le foto si scelgono con il selettore di foto di iOS. L’app può accedere solo alle foto che scegli e non può sfogliare la tua libreria.</li>
+        <li>La lettura dei dati di scatto (EXIF), il bordo, l’anteprima e l’esportazione avvengono sul tuo dispositivo. Le tue foto non vengono mai caricate.</li>
+        <li>Per salvare, l’app chiede solo l’accesso “Aggiungi solo foto” per scrivere l’immagine finita nella tua libreria.</li>
+      </ul>
+
+      <h2>3. Fotocamera</h2>
+      <ul>
+        <li>Quando usi la fotocamera, l’app chiede l’accesso alla fotocamera. L’immagine dal vivo serve solo per l’anteprima del bordo sullo schermo; non viene mai registrata né caricata.</li>
+        <li>Le foto che scatti vengono incorniciate sul dispositivo e sei tu a decidere se salvarle nella libreria.</li>
+      </ul>
+
+      <h2>4. Dati di scatto e luogo</h2>
+      <ul>
+        <li>L’app legge i dati EXIF della foto (come modello di fotocamera, obiettivo, apertura, tempo di posa, ISO, data e luogo) solo per mostrarli sul bordo.</li>
+        <li>Il luogo è disattivato per impostazione predefinita. Compare sul bordo, e i dati GPS restano nell’immagine esportata, solo se lo attivi.</li>
+        <li>L’app non accede mai alla posizione attuale del dispositivo.</li>
+      </ul>
+
+      <h2>5. Acquisti</h2>
+      <ul>
+        <li>Gli abbonamenti Pro e l’acquisto a vita usano gli acquisti in-app di Apple. I pagamenti sono gestiti da Apple; non vediamo mai i tuoi dati di pagamento né il tuo ID Apple.</li>
+        <li>L’app verifica lo stato dell’acquisto sul dispositivo con StoreKit di Apple.</li>
+      </ul>
+
+      <h2>6. Dati salvati sul dispositivo</h2>
+      <p>L’app salva solo il numero di esportazioni gratuite del giorno, i dati di scatto scelti l’ultima volta e i modelli che salvi (i modelli non includono mai il luogo). Questi dati non lasciano mai il dispositivo e vengono eliminati insieme all’app.</p>
+
+      <h2>7. Uso della rete</h2>
+      <p>L’app si connette a internet solo tramite i servizi di Apple, per caricare gli acquisti in-app e per acquistare o ripristinare. Modificare, scattare e salvare funzionano offline.</p>
+
+      <h2>8. Privacy dei minori</h2>
+      <p>L’app non raccoglie informazioni personali da nessuno, compresi i minori di 13 anni.</p>
+
+      <h2>9. Modifiche</h2>
+      <p>Se questa informativa cambia, pubblicheremo la nuova versione in questa pagina e aggiorneremo la data di entrata in vigore.</p>
+
+      <h2>10. Contatti</h2>
+      <p>Domande? Scrivi a <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
+    <article class="card" data-lang="ru">
+      <h1>Политика конфиденциальности</h1>
+      <p class="meta">Дата вступления в силу: 26 октября 2026 г.</p>
+      <p>Эта политика объясняет, как PhotoBorder («приложение») обращается с вашей информацией. Коротко: <strong>приложение не собирает, не загружает и не передаёт никаких личных данных.</strong></p>
+
+      <h2>1. Мы не собираем личные данные</h2>
+      <ul>
+        <li>В приложении нет учётных записей: регистрироваться и входить не нужно.</li>
+        <li>В приложении нет SDK аналитики, рекламы или стороннего отслеживания.</li>
+        <li>У приложения нет собственного сервера, и оно не отправляет разработчику никаких данных.</li>
+      </ul>
+
+      <h2>2. Фото</h2>
+      <ul>
+        <li>Фото выбираются через системное окно выбора фото iOS. Приложение получает доступ только к выбранным фото и не может просматривать вашу медиатеку.</li>
+        <li>Чтение данных съёмки (EXIF), добавление рамки, предпросмотр и экспорт выполняются на устройстве. Ваши фото никогда не загружаются.</li>
+        <li>При сохранении приложение запрашивает только доступ «Только добавление фото», чтобы записать готовое изображение в медиатеку.</li>
+      </ul>
+
+      <h2>3. Камера</h2>
+      <ul>
+        <li>При съёмке приложение запрашивает доступ к камере. Изображение с камеры используется только для предпросмотра рамки на экране; оно не записывается и не загружается.</li>
+        <li>Снятые фото обрамляются на устройстве, и вы сами решаете, сохранять ли их в медиатеку.</li>
+      </ul>
+
+      <h2>4. Данные съёмки и место</h2>
+      <ul>
+        <li>Приложение читает EXIF-данные фото (модель камеры, объектив, диафрагму, выдержку, ISO, дату, место и т. п.) только для показа на рамке.</li>
+        <li>Место по умолчанию выключено. Оно появляется на рамке, а GPS-данные сохраняются в экспортированном изображении, только если вы его включите.</li>
+        <li>Приложение никогда не обращается к текущей геопозиции устройства.</li>
+      </ul>
+
+      <h2>5. Покупки</h2>
+      <ul>
+        <li>Подписки Pro и бессрочная покупка оформляются через встроенные покупки Apple. Платежи обрабатывает Apple; мы не видим ваших платёжных данных и Apple ID.</li>
+        <li>Приложение проверяет статус покупки на устройстве с помощью StoreKit от Apple.</li>
+      </ul>
+
+      <h2>6. Данные на устройстве</h2>
+      <p>Приложение хранит только количество бесплатных экспортов за день, последний выбор данных съёмки и сохранённые вами шаблоны (шаблоны никогда не содержат место). Эти данные не покидают устройство и удаляются вместе с приложением.</p>
+
+      <h2>7. Использование сети</h2>
+      <p>Приложение подключается к интернету только через сервисы Apple — чтобы загрузить встроенные покупки, купить или восстановить их. Редактирование, съёмка и сохранение работают без сети.</p>
+
+      <h2>8. Конфиденциальность детей</h2>
+      <p>Приложение не собирает личную информацию ни у кого, в том числе у детей младше 13 лет.</p>
+
+      <h2>9. Изменения</h2>
+      <p>Если политика изменится, мы опубликуем новую версию на этой странице и обновим дату вступления в силу.</p>
+
+      <h2>10. Контакты</h2>
+      <p>Есть вопросы? Напишите на <a href="mailto:support@nicerhythm.net">support@nicerhythm.net</a>.</p>
+    </article>
     <footer class="site">© 2026 NiceRhythm</footer>
   </div>
 </body>
