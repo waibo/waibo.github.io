@@ -1,7 +1,7 @@
 // 语言选择：?lang= > 上次手动选择 > 浏览器语言 > 英文
 (function () {
   var root = document.documentElement;
-  var supported = ["zh-Hans", "zh-Hant", "en", "ja", "ko", "fr", "es", "de", "pt-BR", "it", "ru", "nl"];
+  var supported = ["zh-Hans", "zh-Hant", "en", "ja", "ko", "fr", "es", "de", "pt-BR", "it", "ru", "ar", "th", "nl"];
 
   function normalize(tag) {
     if (!tag) return null;
@@ -33,6 +33,7 @@
   function apply(lang) {
     root.setAttribute("data-ui", lang);
     root.setAttribute("lang", lang);
+    root.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
     var title = document.querySelector("meta[name='title-" + lang + "']");
     if (title) document.title = title.content;
     var select = document.querySelector(".lang-select");
