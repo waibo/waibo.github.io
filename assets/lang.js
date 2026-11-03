@@ -1,7 +1,7 @@
 // 语言选择：?lang= > 上次手动选择 > 浏览器语言 > 英文
 (function () {
   var root = document.documentElement;
-  var supported = ["zh-Hans", "zh-Hant", "en", "ja", "ko", "fr", "es", "de", "pt-BR", "it", "ru"];
+  var supported = ["zh-Hans", "zh-Hant", "en", "ja", "ko", "fr", "es", "de", "pt-BR", "it", "ru", "nl"];
 
   function normalize(tag) {
     if (!tag) return null;

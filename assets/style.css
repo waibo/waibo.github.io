@@ -161,7 +161,8 @@ html[data-ui="es"] [data-lang]:not([data-lang="es"]),
 html[data-ui="de"] [data-lang]:not([data-lang="de"]),
 html[data-ui="pt-BR"] [data-lang]:not([data-lang="pt-BR"]),
 html[data-ui="it"] [data-lang]:not([data-lang="it"]),
-html[data-ui="ru"] [data-lang]:not([data-lang="ru"]) { display: none !important; }
+html[data-ui="ru"] [data-lang]:not([data-lang="ru"]),
+html[data-ui="nl"] [data-lang]:not([data-lang="nl"]) { display: none !important; }
 
 html[lang="zh-Hant"] body { font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", sans-serif; }
 html[lang="ja"] body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; }
