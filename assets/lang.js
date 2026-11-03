@@ -1,7 +1,7 @@
 // 语言选择：?lang= > 上次手动选择 > 浏览器语言 > 英文
 (function () {
   var root = document.documentElement;
-  var supported = ["zh-Hans", "zh-Hant", "en", "ja", "ko", "fr", "es", "de", "pt-BR", "it", "ru", "ar", "th", "nl"];
+  var supported = ["zh-Hans", "zh-Hant", "en", "ja", "ko", "fr", "es", "es-MX", "de", "pt-BR", "it", "ru", "ar", "th", "nl"];
 
   function normalize(tag) {
     if (!tag) return null;
@@ -9,6 +9,8 @@
     if (t === "zh" || t.indexOf("zh-hans") === 0 || t === "zh-cn" || t === "zh-sg") return "zh-Hans";
     if (t.indexOf("zh") === 0) return "zh-Hant";
     if (t.indexOf("pt") === 0) return "pt-BR";
+    // 西班牙以外的西班牙语（es-MX、es-419、es-AR 等）用墨西哥版
+    if (t.indexOf("es-") === 0 && t !== "es-es") return "es-MX";
     var base = t.split("-")[0];
     return supported.indexOf(base) >= 0 ? base : null;
   }
